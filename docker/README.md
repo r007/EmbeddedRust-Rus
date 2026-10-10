@@ -36,7 +36,7 @@ docker run --rm -p 3000:8080 embedded-rust-ru
 
 ## Фиксированные версии
 
-Версии инструментов заданы аргументами сборки в [Dockerfile](Dockerfile): `MDBOOK_VERSION`, `MDBOOK_MERMAID_VERSION`, `MDBOOK_EPUB_VERSION`, `MDBOOK_I18N_VERSION` и `MDBOOK_SVGBOB_VERSION`. CI (`pages.yml` и `ci.yml`) использует те же версии, поэтому контейнер и опубликованный сайт собираются одинаково.
+Версии инструментов заданы аргументами сборки в [Dockerfile](Dockerfile): `MDBOOK_VERSION`, `MDBOOK_MERMAID_VERSION`, `MDBOOK_EPUB_VERSION`, `MDBOOK_I18N_VERSION`, `MDBOOK_SVGBOB_VERSION`, `MDBOOK_TABS_VERSION` и `MDBOOK_SHIFTINCLUDE_VERSION`. CI (`pages.yml` и `ci.yml`) использует те же версии, поэтому контейнер и опубликованный сайт собираются одинаково.
 
 ## Примечания
 

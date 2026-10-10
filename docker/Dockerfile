@@ -16,6 +16,8 @@ ARG MDBOOK_MERMAID_VERSION=0.17.1
 ARG MDBOOK_EPUB_VERSION=0.5.4
 ARG MDBOOK_I18N_VERSION=0.4.0
 ARG MDBOOK_SVGBOB_VERSION=0.3.1
+ARG MDBOOK_TABS_VERSION=1.0.4
+ARG MDBOOK_SHIFTINCLUDE_VERSION=0.2.0
 ARG NGINX_VERSION=1.27
 
 # ──────────────────────────────────────────────────────────────────────
@@ -28,6 +30,8 @@ ARG MDBOOK_MERMAID_VERSION
 ARG MDBOOK_EPUB_VERSION
 ARG MDBOOK_I18N_VERSION
 ARG MDBOOK_SVGBOB_VERSION
+ARG MDBOOK_TABS_VERSION
+ARG MDBOOK_SHIFTINCLUDE_VERSION
 
 WORKDIR /build
 
@@ -46,6 +50,8 @@ RUN --mount=type=cache,target=/usr/local/cargo/registry \
     cargo install mdbook-epub --version "${MDBOOK_EPUB_VERSION}" --locked --root /usr/local; \
     cargo install mdbook-i18n-helpers --version "${MDBOOK_I18N_VERSION}" --locked --root /usr/local; \
     cargo install mdbook-svgbob --version "${MDBOOK_SVGBOB_VERSION}" --locked --root /usr/local; \
+    cargo install mdbook-tabs --version "${MDBOOK_TABS_VERSION}" --locked --root /usr/local; \
+    cargo install mdbook-shiftinclude --version "${MDBOOK_SHIFTINCLUDE_VERSION}" --locked --root /usr/local; \
     mdbook --version; mdbook-mermaid --version
 
 # Копируем весь репозиторий: книги, covers/, скрипты и крейт xtask.

@@ -50,6 +50,8 @@ jobs:
           cargo install --locked mdbook-epub --version 0.5.4
           cargo install --locked mdbook-i18n-helpers --version 0.4.0
           cargo install --locked mdbook-svgbob --version 0.3.1
+          cargo install --locked mdbook-tabs --version 1.0.4
+          cargo install --locked mdbook-shiftinclude --version 0.2.0
           cargo install --path comprehensive-rust/mdbook-course
           cargo install --path comprehensive-rust/mdbook-exerciser
 
