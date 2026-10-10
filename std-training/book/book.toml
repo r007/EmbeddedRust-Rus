@@ -1,0 +1,14 @@
+[book]
+authors = ["Anatol Ulrich", "Sergio Gasquez", "Сергей Монин (перевод)"]
+description = "Учебный материал Ferrous Systems по Embedded Rust на Espressif"
+language = "ru"
+src = "src"
+title = "Embedded Rust на Espressif"
+
+[rust]
+edition = "2021"
+
+
+[output.html]
+git-repository-url = "https://github.com/r007/EmbeddedRust-Rus"
+edit-url-template = "https://github.com/r007/EmbeddedRust-Rus/edit/main/std-training/book/src/{path}"

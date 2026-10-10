@@ -1,0 +1,18 @@
+[book]
+title    = "Обучение Embedded Rust для ESP32"
+authors = ["Jesse Braham", "Sergio Gasquez", "Сергей Монин (перевод)"]
+language = "ru"
+src      = "training-ru"
+
+[rust]
+edition = "2024"
+
+[output.html]
+additional-js      = ["mermaid-init.js", "mermaid.min.js"]
+git-repository-url = "https://github.com/r007/EmbeddedRust-Rus"
+edit-url-template = "https://github.com/r007/EmbeddedRust-Rus/edit/main/no-std-training/training-ru/{path}"
+
+[preprocessor.shiftinclude]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"

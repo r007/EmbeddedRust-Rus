@@ -1,0 +1,41 @@
+---
+minutes: 5
+---
+
+<!--
+Copyright 2023 Google LLC
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
+# Unions
+
+Unions are like enums, but you need to track the active field yourself:
+
+```rust,editable
+# // Copyright 2023 Google LLC
+# // SPDX-License-Identifier: Apache-2.0
+#
+#[repr(C)]
+union MyUnion {
+    i: u8,
+    b: bool,
+}
+
+fn main() {
+    let u = MyUnion { i: 42 };
+    println!("int: {}", unsafe { u.i });
+    println!("bool: {}", unsafe { u.b }); // Undefined behavior!
+}
+```
+
+<details>
+
+Unions are rarely needed in Rust as enums provide a superior alternative. They
+are occasionally needed for interacting with C library APIs.
+
+If you just want to reinterpret bytes as a different type, you probably want
+[`std::mem::transmute`](https://doc.rust-lang.org/stable/std/mem/fn.transmute.html)
+or a safe wrapper such as the [`zerocopy`](https://crates.io/crates/zerocopy)
+crate.
+
+</details>

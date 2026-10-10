@@ -1,0 +1,65 @@
+---
+minutes: 5
+---
+
+<!--
+Copyright 2025 Google LLC
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
+# Display
+
+"Write to string" trait, prioritizing readability for an end user.
+
+Derivable: ❌, without crates like `derive_more`.
+
+```rust,editable
+# // Copyright 2025 Google LLC
+# // SPDX-License-Identifier: Apache-2.0
+#
+#[derive(Debug)]
+pub enum NetworkError {
+    HttpCode(u16),
+    WhaleBitTheUnderseaCable,
+}
+
+impl std::fmt::Display for NetworkError {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        match self {
+            NetworkError::HttpCode(code) => write!(f, "HTTP Error code {code}"),
+            NetworkError::WhaleBitTheUnderseaCable => {
+                write!(f, "Whale attack detected – call Ishmael")
+            }
+        }
+    }
+}
+
+fn main() {
+    let http = NetworkError::HttpCode(404);
+    let whale = NetworkError::WhaleBitTheUnderseaCable;
+
+    println!("http debug: {:?}", http);
+    println!("http display: {}", http);
+    println!("whale debug: {:?}", whale);
+    println!("whale display: {}", whale);
+}
+```
+
+<details>
+
+- A trait similar to `Debug`, but with a focus on end-user readability.
+
+- Prerequisite for the `Error` trait. If implementing for an error type, focus
+  on providing a descriptive error for users and programmers other than you.
+
+- Same security considerations as Debug, consider the ways that sensitive data
+  could be exposed in UI or logs.
+
+- Types that implement `Display` automatically have `ToString` implemented for
+  them.
+
+- Compare the behavior of `Debug` and `Display` for our example error type. Show
+  that the `Debug` impl more directly represents the data as it appears in code,
+  whereas `Display` provides a more friendly message to non-programmers.
+
+</details>

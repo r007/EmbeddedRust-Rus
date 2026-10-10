@@ -1,0 +1,57 @@
+---
+minutes: 5
+---
+
+<!--
+Copyright 2025 Google LLC
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
+# Supertraits / Trait Dependencies
+
+Traits can be extended by new traits.
+
+```rust,editable
+# // Copyright 2025 Google LLC
+# // SPDX-License-Identifier: Apache-2.0
+#
+pub trait Animal {
+    /* methods common to all animals */
+}
+
+pub trait Mammal: Animal {
+    /* methods only for mammals */
+}
+
+// From stdlib
+
+pub trait Ord: Eq + PartialOrd {
+    /* methods for Ord */
+}
+```
+
+<details>
+
+- When authoring a trait, you can specify traits that a type must also. These
+  are called _supertraits_.
+
+  For the example above, any type that implements `Mammal` must also implement
+  `Animal`.
+
+- These hierarchies of traits let us design systems around the behavior of
+  complex real-world taxonomies (like fauna, machine hardware, operating system
+  specifics, etc).
+
+- This is distinct from object inheritance! But it looks similar.
+
+  - Object inheritance allows for overrides and brings in the behavior of the
+    inherited types by default.
+
+  - A trait having a supertrait doesn't mean that trait can override method
+    implementations as default implementations.
+
+ref:
+
+- https://doc.rust-lang.org/reference/items/traits.html?highlight=supertrait#r-items.traits.supertraits
+
+</details>

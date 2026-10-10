@@ -1,0 +1,28 @@
+name: embedded-rust-ru
+
+services:
+  books:
+    build:
+      # Контекст — корень репозитория: сборке нужны исходники книг и крейт
+      # xtask, которые лежат выше этого файла.
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: embedded-rust-ru:local
+    container_name: embedded-rust-ru-books
+
+    # Порт хоста настраивается; контейнер всегда слушает 8080, потому что
+    # nginx-unprivileged работает от непривилегированного пользователя.
+    ports:
+      - "${PORT:-3000}:8080"
+
+    restart: unless-stopped
+
+    security_opt:
+      - no-new-privileges:true
+
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 5s
+      start_period: 5s
+      retries: 3

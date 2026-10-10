@@ -1,0 +1,11 @@
+# Держим контекст сборки небольшим. Исходники книг (*.md) не исключаем.
+.git
+.github
+.gitignore
+.dockerignore
+site/
+target/
+.idea/
+.vscode/
+.DS_Store
+*:Zone.Identifier

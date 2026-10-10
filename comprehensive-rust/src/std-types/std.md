@@ -1,0 +1,23 @@
+---
+minutes: 3
+---
+
+<!--
+Copyright 2023 Google LLC
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
+# Standard Library
+
+Rust comes with a standard library that helps establish a set of common types
+used by Rust libraries and programs. This way, two libraries can work together
+smoothly because they both use the same `String` type.
+
+In fact, Rust contains several layers of the Standard Library: `core`, `alloc`
+and `std`.
+
+- `core` includes the most basic types and functions that don't depend on
+  `libc`, allocator or even the presence of an operating system.
+- `alloc` includes types that require a global heap allocator, such as `Vec`,
+  `Box` and `Arc`.
+- Embedded Rust applications typically only use `core`, and sometimes `alloc`.

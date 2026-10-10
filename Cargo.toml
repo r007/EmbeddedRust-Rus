@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = ["xtask"]
+# Книги — отдельные проекты (и вложенные крейты примеров), в воркспейс не входят.
+exclude = [
+    "comprehensive-rust",
+    "discovery-mb2",
+    "embedded-book",
+    "esp32-book",
+    "no-std-training",
+    "pico-pico",
+    "rust-training",
+    "std-training",
+]

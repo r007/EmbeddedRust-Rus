@@ -1,0 +1,15 @@
+[package]
+name = "host-client"
+version = "0.1.0"
+authors = [
+    "Anatol Ulrich <anatol.ulrich@ferrous-systems.com>",
+    "Sergio Gasquez <sergio.gasquez@gmail.com>",
+]
+edition = "2021"
+
+[dependencies]
+get-uuid      = { path = "../../../common/lib/get-uuid" }
+mqtt-messages = { path = "../../../common/lib/mqtt-messages" }
+rand          = "=0.8.5"
+rumqttc       = "=0.24.0"
+toml-cfg      = "=0.1.3"

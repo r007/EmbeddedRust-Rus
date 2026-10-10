@@ -1,0 +1,28 @@
+[package]
+name = "i2c-driver"
+version = "0.1.0"
+authors = [
+    "Sergio Gasquez <sergio.gasquez@gmail.com>",
+    "Tanks Transfeld <tanks.transfeld@ferrous-systems.com>",
+]
+edition = "2021"
+resolver = "2"
+
+[[bin]]
+name = "i2c-driver"
+harness = false # We can't use the default rust libtest harness for a crosscompile target
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug     = true # Symbols are nice and they don't increase the size on Flash
+opt-level = "z"
+
+[dependencies]
+anyhow       = "=1.0.95"
+embedded-hal = "=0.2.7"
+esp-idf-svc  = "=0.50.1"
+
+[build-dependencies]
+embuild = "=0.33.0"

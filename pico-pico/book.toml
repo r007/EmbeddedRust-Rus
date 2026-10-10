@@ -1,0 +1,29 @@
+[book]
+title = "impl Rust для RP2350"
+description = "Изучаем встраиваемое программирование на Rust для Raspberry Pi Pico 2 (RP2350): GPIO, ШИМ, периферия и практические проекты."
+authors = ["ImplFerris (оригинал)", "Сергей Монин (перевод)"]
+language = "ru"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/r007/EmbeddedRust-Rus"
+edit-url-template = "https://github.com/r007/EmbeddedRust-Rus/edit/main/pico-pico/src/{path}"
+preferred-dark-theme = "ayu"
+default-theme = "light"
+mathjax-support = true
+
+# Не показывать оглавление всей страницы в навигационной панели
+# Это сбивает с толку при просмотре главы
+sidebar-header-nav = false
+
+additional-css = ["theme/css/custom.css", "theme/tabs.css"]
+additional-js = ["theme/tabs.js"]
+
+
+[output.html.fold]
+enable = true
+level = 1     # уровень, с которого начинается сворачивание
+
+[output.html.playground]
+editable = true
+[preprocessor.tabs]

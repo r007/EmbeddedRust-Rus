@@ -1,0 +1,64 @@
+name: Образ Docker
+
+# Только сборка и дымовой тест. Образ никуда не публикуется, поэтому нет дополнительных
+# учётных данных реестра. Workflow нужен, чтобы Dockerfile не сломался незаметно.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docker/**'
+      - '.dockerignore'
+      - 'xtask/**'
+      - 'covers/**'
+      - '**/book.toml'
+      - '.github/workflows/docker.yml'
+  pull_request:
+    paths:
+      - 'docker/**'
+      - '.dockerignore'
+      - 'xtask/**'
+      - 'covers/**'
+      - '**/book.toml'
+      - '.github/workflows/docker.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: docker/setup-buildx-action@37fe631027851001ddb9b187196cc803df7f5f0e # v4.3.0
+
+      - name: Сборка образа
+        uses: docker/build-push-action@53b7df96c91f9c12dcc8a07bcb9ccacbed38856a # v7.3.0
+        with:
+          context: .
+          file: docker/Dockerfile
+          push: false
+          load: true
+          tags: embedded-rust-ru:ci
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Дымовой тест
+        run: |
+          docker run -d --name books -p 3000:8080 embedded-rust-ru:ci
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:3000/ >/dev/null 2>&1; then ok=1; break; fi
+            sleep 2
+          done
+          if [ "${ok:-0}" != "1" ]; then
+            echo "::error::сервер не поднялся"; docker logs books; exit 1
+          fi
+          # Каталог, книга и файлы для скачивания должны открываться.
+          # ПРИМЕЧАНИЕ: сравниваем по <title>, потому что заголовок страницы находится в <head>.
+          curl -fsS http://localhost:3000/ | grep -q "<title>Rust для embedded: книги на русском</title>"
+          curl -fsS -o /dev/null -w '%{http_code}\n' http://localhost:3000/discovery-mb2/ | grep -q 200
+          curl -fsS -o /dev/null -w '%{http_code}\n' http://localhost:3000/comprehensive-rust/comprehensive-rust.epub | grep -q 200
+          # Ссылки без расширения должны открываться через try_files.
+          curl -fsS -o /dev/null -w '%{http_code}\n' http://localhost:3000/discovery-mb2/DOWNLOAD | grep -q 200
+          docker rm -f books

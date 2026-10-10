@@ -1,0 +1,25 @@
+<!--
+Copyright 2025 Google LLC
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
+# Using it
+
+Let's write a small program using our driver to write to the serial console.
+
+```rust,editable,compile_fail
+# // Copyright 2025 Google LLC
+# // SPDX-License-Identifier: Apache-2.0
+#
+{{#include ../examples/src/main_minimal.rs:main}}
+```
+
+<details>
+
+- As in the [inline assembly](../inline-assembly.md) example, this `main`
+  function is called from our entry point code in `entry.S`. See the speaker
+  notes there for details.
+- Run the example in QEMU with `make qemu_minimal` under
+  `src/bare-metal/aps/examples`.
+
+</details>

@@ -1,0 +1,9 @@
+[book]
+authors = ["James Munns (оригинал)", "Сергей Монин (перевод)"]
+language = "ru"
+src = "src"
+title = "Встраиваемый Rust (The Embedded Rust Book)"
+
+[output.html]
+git-repository-url = "https://github.com/r007/EmbeddedRust-Rus"
+edit-url-template = "https://github.com/r007/EmbeddedRust-Rus/edit/main/embedded-book/src/{path}"

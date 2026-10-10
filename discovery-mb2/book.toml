@@ -1,0 +1,24 @@
+[book]
+title = "Учебник Discovery по Rust на BBC micro-bit v2"
+description = "Откройте для себя мир микроконтроллеров с помощью Rust на примере BBC micro:bit v2"
+authors = ["Rust Embedded Resources Team (оригинал)", "Сергей Монин (перевод)"]
+language = "ru"
+
+[output.html]
+git-repository-url = "https://github.com/r007/EmbeddedRust-Rus"
+edit-url-template = "https://github.com/r007/EmbeddedRust-Rus/edit/main/discovery-mb2/src/{path}"
+additional-js = ["src/assets/epub-link.js"]
+additional-css = ["src/assets/custom.css"]
+
+[output.epub]
+optional = true
+# Optional settings
+title = "Учебник Discovery по Rust на BBC micro-bit v2"
+author = "Rust Embedded Resources Team"
+
+# [output.html.site]
+# url = "/"
+# Optional settings
+# base-url = "/discovery-mb2/"
+# git-repository-url = "
+

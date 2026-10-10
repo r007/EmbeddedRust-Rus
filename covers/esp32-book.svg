@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t-esp32-book">
+  <title id="t-esp32-book">esp32-book</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#059669"/><stop offset="1" stop-color="#052e2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <circle cx="700" cy="80" r="160" fill="#ffffff" fill-opacity=".06"/>
+  <circle cx="90" cy="420" r="120" fill="#ffffff" fill-opacity=".05"/>
+  <text x="60" y="120" font-size="20" letter-spacing="3" fill="#ffffff" fill-opacity=".85" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">ESP32</text>
+  <text x="60" y="210" font-size="50" font-weight="700" fill="#ffffff" font-family="DejaVu Sans, Arial, sans-serif">impl Rust</text><text x="60" y="268" font-size="50" font-weight="700" fill="#ffffff" font-family="DejaVu Sans, Arial, sans-serif">для ESP32</text>
+  <g transform="translate(590 225) scale(1.0)"><rect x="-110" y="-75" width="220" height="150" rx="12" fill="#1f2937"/><polyline points="-60,-75 -60,-100 -20,-100 -20,-75" fill="none" stroke="#9ca3af" stroke-width="6"/><rect x="-48" y="-62" width="100" height="84" rx="6" fill="#d1d5db"/><rect x="-30" y="-44" width="60" height="30" rx="3" fill="#6b7280"/><circle cx="-104" cy="-60" r="5" fill="#facc15"/><circle cx="104" cy="-60" r="5" fill="#facc15"/><circle cx="-104" cy="-40" r="5" fill="#facc15"/><circle cx="104" cy="-40" r="5" fill="#facc15"/><circle cx="-104" cy="-20" r="5" fill="#facc15"/><circle cx="104" cy="-20" r="5" fill="#facc15"/><circle cx="-104" cy="0" r="5" fill="#facc15"/><circle cx="104" cy="0" r="5" fill="#facc15"/><circle cx="-104" cy="20" r="5" fill="#facc15"/><circle cx="104" cy="20" r="5" fill="#facc15"/><circle cx="-104" cy="40" r="5" fill="#facc15"/><circle cx="104" cy="40" r="5" fill="#facc15"/><circle cx="-104" cy="60" r="5" fill="#facc15"/><circle cx="104" cy="60" r="5" fill="#facc15"/></g>
+</svg>

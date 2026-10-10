@@ -1,0 +1,26 @@
+[book]
+title = "impl Rust для ESP32"
+authors = ["ImplFerris (оригинал)", "Сергей Монин (перевод)"]
+language = "ru"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/r007/EmbeddedRust-Rus"
+edit-url-template = "https://github.com/r007/EmbeddedRust-Rus/edit/main/esp32-book/src/{path}"
+preferred-dark-theme = "ayu"
+default-theme = "dark"
+mathjax-support = true
+
+
+# Don't show table of contents for entire page in the navigation bar
+# Pretty confusing to look at the chapter 
+sidebar-header-nav = false
+
+additional-css = ["theme/css/custom.css"]
+
+# [output.html.playground]
+# editable = true
+
+[output.html.fold]
+enable = true
+level = 1     # the depth to start folding

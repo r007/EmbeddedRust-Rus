@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t-std-training">
+  <title id="t-std-training">std-training</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d97706"/><stop offset="1" stop-color="#2a1606"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <circle cx="700" cy="80" r="160" fill="#ffffff" fill-opacity=".06"/>
+  <circle cx="90" cy="420" r="120" fill="#ffffff" fill-opacity=".05"/>
+  <text x="60" y="120" font-size="20" letter-spacing="3" fill="#ffffff" fill-opacity=".85" font-family="DejaVu Sans, Arial, sans-serif" font-weight="700">КУРС · STD</text>
+  <text x="60" y="210" font-size="50" font-weight="700" fill="#ffffff" font-family="DejaVu Sans, Arial, sans-serif">Embedded Rust</text><text x="60" y="268" font-size="50" font-weight="700" fill="#ffffff" font-family="DejaVu Sans, Arial, sans-serif">на Espressif</text>
+  <g transform="translate(590 225) scale(1.0)"><rect x="-110" y="-75" width="220" height="150" rx="12" fill="#1f2937"/><polyline points="-60,-75 -60,-100 -20,-100 -20,-75" fill="none" stroke="#9ca3af" stroke-width="6"/><rect x="-48" y="-62" width="100" height="84" rx="6" fill="#d1d5db"/><rect x="-30" y="-44" width="60" height="30" rx="3" fill="#6b7280"/><circle cx="-104" cy="-60" r="5" fill="#facc15"/><circle cx="104" cy="-60" r="5" fill="#facc15"/><circle cx="-104" cy="-40" r="5" fill="#facc15"/><circle cx="104" cy="-40" r="5" fill="#facc15"/><circle cx="-104" cy="-20" r="5" fill="#facc15"/><circle cx="104" cy="-20" r="5" fill="#facc15"/><circle cx="-104" cy="0" r="5" fill="#facc15"/><circle cx="104" cy="0" r="5" fill="#facc15"/><circle cx="-104" cy="20" r="5" fill="#facc15"/><circle cx="104" cy="20" r="5" fill="#facc15"/><circle cx="-104" cy="40" r="5" fill="#facc15"/><circle cx="104" cy="40" r="5" fill="#facc15"/><circle cx="-104" cy="60" r="5" fill="#facc15"/><circle cx="104" cy="60" r="5" fill="#facc15"/><path d="M150 -70 a70 70 0 0 1 0 70" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="7" stroke-linecap="round"/><path d="M172 -90 a100 100 0 0 1 0 110" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="7" stroke-linecap="round"/></g>
+</svg>

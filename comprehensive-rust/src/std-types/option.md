@@ -1,0 +1,52 @@
+---
+minutes: 10
+---
+
+<!--
+Copyright 2023 Google LLC
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
+# Option
+
+We have already seen some use of `Option<T>`. It stores either a value of type
+`T` or nothing. For example,
+[`String::find`](https://doc.rust-lang.org/stable/std/string/struct.String.html#method.find)
+returns an `Option<usize>`.
+
+```rust,editable,should_panic
+# // Copyright 2023 Google LLC
+# // SPDX-License-Identifier: Apache-2.0
+#
+fn main() {
+    let name = "Löwe 老虎 Léopard Gepardi";
+    let mut position: Option<usize> = name.find('é');
+    dbg!(position);
+    assert_eq!(position.unwrap(), 14);
+    position = name.find('Z');
+    dbg!(position);
+    assert_eq!(position.expect("Character not found"), 0);
+}
+```
+
+<details>
+
+- `Option` is widely used, not just in the standard library.
+- `unwrap` will return the value in an `Option`, or panic. `expect` is similar
+  but takes an error message.
+  - You can panic on None, but you can't "accidentally" forget to check for
+    None.
+  - It's common to `unwrap`/`expect` all over the place when hacking something
+    together, but production code typically handles `None` in a nicer fashion.
+
+- Many of methods on `Option` such as `insert` and `take` can be viewed as
+  treating it like a container with room for at most one element. Methods with
+  similar names and behaviors exist on other container types.
+
+- The "niche optimization" means that `Option<T>` typically has the same size in
+  memory as `T`, if there is some representation that is not a valid value of T.
+  For example, a reference cannot be NULL, so `Option<&T>` automatically uses
+  NULL to represent the `None` variant, and thus can be stored in the same
+  memory as `&T`.
+
+</details>

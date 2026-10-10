@@ -1,0 +1,9 @@
+# Результат сборки сайта и временные файлы xtask
+/site/
+target/
+
+# Файлы редакторов и ОС
+*:Zone.Identifier
+.DS_Store
+.idea/
+.vscode/

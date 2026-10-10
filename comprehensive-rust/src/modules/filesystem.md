@@ -1,0 +1,98 @@
+---
+minutes: 5
+---
+
+<!--
+Copyright 2022 Google LLC
+SPDX-License-Identifier: CC-BY-4.0
+-->
+
+# Filesystem Hierarchy
+
+Omitting the module content will tell Rust to look for it in another file:
+
+```rust,editable,compile_fail
+# // Copyright 2022 Google LLC
+# // SPDX-License-Identifier: Apache-2.0
+#
+mod garden;
+```
+
+This tells Rust that the `garden` module content is found in a `garden.rs` file
+in the same directory as the file that declared the module. If the `garden`
+module similarly declares a `vegetables` submodule, then the content of
+`garden::vegetables` would be found at `garden/vegetables.rs`.
+
+The `crate` root is in:
+
+- `src/lib.rs` (for a library crate)
+- `src/main.rs` (for a binary crate)
+
+This is the starting point from which the compiler identifies additional
+modules.
+
+Modules defined in files can be documented, too, using "inner doc comments".
+These document the item that contains them -- in this case, a module.
+
+```rust,editable,compile_fail
+# // Copyright 2022 Google LLC
+# // SPDX-License-Identifier: Apache-2.0
+#
+//! This module implements the garden, including a highly performant germination
+//! implementation.
+
+// Declare submodules.
+mod plant;
+mod seeds;
+
+// Re-export types from this module.
+pub use plant::Plant;
+pub use seeds::SeedPacket;
+
+pub struct Garden {
+    plants: Vec<Plant>,
+}
+
+/// Sow the given seed packets.
+pub fn sow(seeds: Vec<SeedPacket>) {
+    todo!()
+}
+
+/// Harvest the produce in the garden that is ready.
+pub fn harvest(garden: &mut Garden) {
+    todo!()
+}
+```
+
+<details>
+
+- Before Rust 2018, modules needed to be located at `module/mod.rs` instead of
+  `module.rs`, and this is still a working alternative for editions after 2018.
+
+- The main reason to introduce `filename.rs` as alternative to `filename/mod.rs`
+  was because many files named `mod.rs` can be hard to distinguish in IDEs.
+
+- Deeper nesting can use folders, even if the main module is a file:
+
+  ```ignore
+  src/
+  ├── main.rs
+  ├── top_module.rs
+  └── top_module/
+      └── sub_module.rs
+  ```
+
+- The place Rust will look for modules can be changed with a compiler directive:
+
+  ```rust,ignore
+  # // Copyright 2022 Google LLC
+  # // SPDX-License-Identifier: Apache-2.0
+  #
+  #[path = "some/path.rs"]
+  mod some_module;
+  ```
+
+  This is useful, for example, if you would like to place tests for a module in
+  a file named `some_module_test.rs`, similar to the convention in Go.
+
+</details>
