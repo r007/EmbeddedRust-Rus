@@ -8,7 +8,7 @@
 Связаться с LSM303AGR можно по I2C, который есть на плате micro:bit. Обратите внимание, что nRF52833 поддерживает I2C через периферийное устройство TWIM (Two-Wire Interface Master).
 
 Для начала настроим периферию I2C на нашей отладочной плате и прочитаем регистр ID акселерометра LSM303AGR.
-Отправная точка находится в файле `exercises/8-embedded/1-embedded-ecosystem/src/main.rs` в [репозитории](https://github.com/r007/EmbeddedRust-Rus/tree/main/rust-training).
+Отправная точка находится в файле `exercises/8-embedded/1-embedded-ecosystem/src/main.rs` в [репозитории](https://github.com/tweedegolf/rust-training).
 
 Попробуйте запустить существующий проект, а затем реализуйте функциональность в соответствии с комментариями в коде.
 
