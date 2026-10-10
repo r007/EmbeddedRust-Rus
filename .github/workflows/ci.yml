@@ -36,15 +36,18 @@ jobs:
       - name: Кэш cargo
         uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
+          # Метаданные cargo нужны, чтобы cargo install узнавал бинарники из кэша; v2 в ключе сбрасывает старый кэш без них.
           path: |
             ~/.cargo/bin
+            ~/.cargo/.crates.toml
+            ~/.cargo/.crates2.json
             ~/.cargo/registry/index
             ~/.cargo/registry/cache
             ~/.cargo/git/db
             target
-          key: ${{ runner.os }}-books-${{ hashFiles('**/Cargo.lock') }}
+          key: ${{ runner.os }}-books-v2-${{ hashFiles('**/Cargo.lock') }}
           restore-keys: |
-            ${{ runner.os }}-books-
+            ${{ runner.os }}-books-v2-
       - name: Установка инструментов mdBook
         run: |
           cargo install --locked mdbook --version 0.5.4
