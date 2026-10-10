@@ -98,7 +98,7 @@ Rust-Analyzer много помогает при разработке и нез�
 ## Код курса
 
 Когда всё установлено, склонируйте репозиторий с исходным кодом через Git.
-Репозиторий находится здесь: <https://github.com/r007/EmbeddedRust-Rus/tree/main/rust-training>.
+Репозиторий находится здесь: <https://github.com/tweedegolf/rust-training>.
 
 Инструкции по клонированию: <https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls>
 
