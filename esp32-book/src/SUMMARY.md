@@ -97,7 +97,7 @@
         - [Точность АЦП ESP32](./thermistor/esp32-non-linear.md)
     - [Нелинейность](./thermistor/non-linear.md)
         - [Уравнение B](./thermistor/b-equation.md)
-        - [Уравнение Штейнхарта](./thermistor/steinhart.md)
+        - [Уравнение Стейнхарта](./thermistor/steinhart.md)
     - [Схема](./thermistor/circuit.md)
     - [Вывод значений АЦП](./thermistor/print-adc.md)
     - [Температура на OLED-дисплее](./thermistor/oled/index.md)

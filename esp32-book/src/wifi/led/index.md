@@ -42,7 +42,7 @@ Serde — это крейт Rust для сериализации и десери
 ```toml
 serde = { version = "1.0.228", default-features = false, features = ["derive"] }
 
-# Включаем функцию «json» 
+# Включаем feature «json»
 picoserve = { version = "0.17.1", features = ["embassy", "json"] }
 ```
 

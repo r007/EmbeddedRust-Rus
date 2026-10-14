@@ -1,4 +1,4 @@
-{{#title Multi Custom Character Generator for LCD1602 Displays}}
+{{#title Генератор нескольких пользовательских символов для LCD1602}}
 
 # Генератор нескольких пользовательских символов
 
@@ -289,7 +289,7 @@
     // Обработчики событий
     gridSizeSelector.addEventListener('change', () => {
         gridCount = parseInt(gridSizeSelector.value);
-        validateLayout(); // Apply layout restriction
+        validateLayout(); // Применяем ограничение раскладки
         createGrids(gridCount, gridLayoutSelector.value);
         updateOutput(gridCount);
     });

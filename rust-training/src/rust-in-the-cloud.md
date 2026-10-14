@@ -25,7 +25,7 @@ cargo binstall cargo-lambda
 
 ### 5.2.1.B Роутер axum с lambda_http
 
-Крейт [`lambda_runtime`](https://crates.io/crates/lambda_runtime/) предоставляет рантайм для AWS Lambda, написанных на Rust. Крейт [`lambda_http`](https://crates.io/crates/lambda_http) добавляет слой абстракции поверх `lambda_runtime`, который упрощает разработку HTTP-серверов на AWS Lambda с помощью Rust. Это идеально подходит для небольших динамических сайтов и REST API.
+Крейт [`lambda_runtime`](https://crates.io/crates/lambda_runtime/) предоставляет рантайм для функций AWS Lambda, написанных на Rust. Крейт [`lambda_http`](https://crates.io/crates/lambda_http) добавляет слой абстракции поверх `lambda_runtime`, который упрощает разработку HTTP-серверов на AWS Lambda с помощью Rust. Это идеально подходит для небольших динамических сайтов и REST API.
 
 Добавьте `lambda_http` в проект командой:
 ```
@@ -74,7 +74,7 @@ cargo lambda build --release --arm64 --output-format zip
 ```
 Эта команда создаст файл `bootstrap.zip` в папке `target/lambda/{имя проекта}`, который можно загрузить в консоль AWS, чтобы развернуть Lambda.
 
-Однако этот zip-файл не содержит наши ресурсы. Если мы хотим, чтобы Lambda отдавала HTML-документ, а также соответствующие CSS-файл и изображение, эти ресурсы нужно включить в архив. Создадим конфигурационный файл `CargoLambda.toml`, в котором опишем, как собирать Lambda, и добавим в него следующее:
+Однако этот zip-файл не содержит наших ресурсов. Если мы хотим, чтобы Lambda отдавала HTML-документ, а также соответствующие CSS-файл и изображение, эти ресурсы нужно включить в архив. Создадим конфигурационный файл `CargoLambda.toml`, в котором опишем, как собирать Lambda, и добавим в него следующее:
 ```toml
 [build]
 arm64 = true

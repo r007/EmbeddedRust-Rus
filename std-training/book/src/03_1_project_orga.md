@@ -15,9 +15,9 @@
 
 Подробнее — в главе [об экосистеме](https://esp-rs.github.io/book/overview/using-the-standard-library.html) книги The Rust on ESP Book.
 
-### Инструментарий сборки
+### Тулчейн сборки
 
-🔎 В процессе сборки проекта `esp-idf-sys` загружает [ESP-IDF](https://github.com/espressif/esp-idf) — основанный на C инструментарий Espressif. Каталог загрузки можно настроить. Чтобы сэкономить место на диске и время загрузки, все примеры и упражнения в репозитории практикума используют один общий (`global`) инструментарий, установленный в `~/.espressif` (в Windows — `%USERPROFILE%\.espressif`). Другие варианты см. в описании параметра `ESP_IDF_TOOLS_INSTALL_DIR` в [README](https://github.com/esp-rs/esp-idf-sys#configuration) `esp-idf-sys`.
+🔎 В процессе сборки проекта `esp-idf-sys` загружает [ESP-IDF](https://github.com/espressif/esp-idf) — основанный на C набор инструментов Espressif. Каталог загрузки можно настроить. Чтобы сэкономить место на диске и время загрузки, все примеры и упражнения в репозитории практикума используют один общий (`global`) экземпляр этого набора, установленный в `~/.espressif` (в Windows — `%USERPROFILE%\.espressif`). Другие варианты см. в описании параметра `ESP_IDF_TOOLS_INSTALL_DIR` в [README](https://github.com/esp-rs/esp-idf-sys#configuration) `esp-idf-sys`.
 
 ## Структура пакета
 

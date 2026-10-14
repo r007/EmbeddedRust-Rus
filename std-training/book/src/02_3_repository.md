@@ -1,12 +1,12 @@
 # Репозиторий практикума
 
-Весь материал находится по адресу <https://github.com/esp-rs/std-training>.
+Весь материал находится в каталоге [`std-training`](https://github.com/r007/EmbeddedRust-Rus/tree/main/std-training) этого репозитория.
 
-✅ Клонируйте репозиторий практикума и перейдите в его папку:
+✅ Клонируйте репозиторий и перейдите в папку практикума:
 
 ```console
-git clone "https://github.com/r007/EmbeddedRust-Rus/tree/main/std-training"
-cd std-training
+git clone https://github.com/r007/EmbeddedRust-Rus.git
+cd EmbeddedRust-Rus/std-training
 ```
 
 ❗ Пользователи Windows могут столкнуться с проблемами из-за [длинных путей][windows-long-path].

@@ -1657,7 +1657,7 @@ msgstr "Сериализатор: полная реализация"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system.md
 msgid "Borrow checking invariants"
-msgstr "Инварианты проверки заимствований"
+msgstr "Инварианты анализатора заимствований"
 
 #: src/SUMMARY.md src/idiomatic/leveraging-the-type-system/borrow-checker-invariants/generalizing-ownership.md
 msgid "Lifetimes and Borrows: the Abstract Rules"
@@ -2161,7 +2161,7 @@ msgstr "Курс также доступен [в формате EPUB](comprehens
 
 #: src/index.md
 msgid "The goal of the course is to teach you Rust. We assume you don't know anything about Rust and hope to:"
-msgstr "Цель курса --- научить вас языку Rust. Мы предполагаем, что вы ничего не знаете о Rust и надеемся:"
+msgstr "Цель курса --- научить вас языку Rust. Мы предполагаем, что вы ничего не знаете о Rust, и надеемся:"
 
 #: src/index.md
 msgid "Give you a comprehensive understanding of the Rust syntax and language."
@@ -2189,7 +2189,7 @@ msgstr "[Android](android.md): рассчитанный на полдня кур
 
 #: src/index.md
 msgid "[Chromium](chromium.md): a half-day course on using Rust in Chromium-based browsers. This includes interoperability with C++ and how to include third-party crates in Chromium."
-msgstr "[Chromium](chromium.md): полудневный курс по использованию Rust в браузерах на базе Chromium. Включает взаимодействие с C++ и подключение сторонних крейтов в Chromium."
+msgstr "[Chromium](chromium.md): рассчитанный на полдня курс по использованию Rust в браузерах на базе Chromium. Включает взаимодействие с C++ и подключение сторонних крейтов в Chromium."
 
 #: src/index.md
 msgid "[Bare-metal](bare-metal.md): a whole-day class on using Rust for bare-metal (embedded) development. Both microcontrollers and application processors are covered."
@@ -2245,7 +2245,7 @@ msgstr "Перед проведением курса желательно:"
 
 #: src/running-the-course.md
 msgid "Make yourself familiar with the course material. We've included speaker notes to help highlight the key points (please help us by contributing more speaker notes!). When presenting, you should make sure to open the speaker notes in a popup (click the link with a little arrow next to \"Speaker Notes\"). This way you have a clean screen to present to the class."
-msgstr "Ознакомиться с материалами курса. Мы добавили заметки для преподавателя на некоторых страницах, чтобы выделить ключевые моменты (пожалуйста, помогайте нам, добавляя свои заметки для преподавателей!). Убедитесь в том, что открыли заметки для преподавателя во всплывающем окне (нажмите на ссылку с маленькой стрелкой рядом с ”Заметки для преподавателя”). У вас откроется отдельное окно с заметками для преподавателя, в то время как основное окно вы можете демонстрировать классу."
+msgstr "Ознакомиться с материалами курса. Мы добавили заметки для преподавателя на некоторых страницах, чтобы выделить ключевые моменты (пожалуйста, помогайте нам, добавляя свои заметки для преподавателей!). Убедитесь в том, что открыли заметки для преподавателя во всплывающем окне (нажмите на ссылку с маленькой стрелкой рядом с «Заметки для преподавателя»). У вас откроется отдельное окно с заметками для преподавателя, в то время как основное окно вы можете демонстрировать классу."
 
 #: src/running-the-course.md
 msgid "Decide on the dates. Since the course takes four days, we recommend that you schedule the days over two weeks. Course participants have said that they find it helpful to have a gap in the course since it helps them process all the information we give them."
@@ -2257,7 +2257,7 @@ msgstr "Найдите помещение, достаточно просторн
 
 #: src/running-the-course.md
 msgid "On the day of your course, show up to the room a little early to set things up. We recommend presenting directly using `mdbook serve` running on your laptop (see the [installation instructions](https://github.com/google/comprehensive-rust#building)). This ensures optimal performance with no lag as you change pages. Using your laptop will also allow you to fix typos as you or the course participants spot them."
-msgstr "В день занятия приходите в аудиторию немного раньше, чтобы всё подготовить. Мы рекомендуем показывать слайды используя `mdbook serve`, запущенного на вашем ноутбуке (см. [installation instructions](https://github.com/r007/EmbeddedRust-Rus/tree/main/comprehensive-rust#building)). Это обеспечивает оптимальную производительность без задержек при смене страниц. Использование ноутбука также позволит вам исправлять опечатки по мере их обнаружения вами или участниками курса."
+msgstr "В день занятия приходите в аудиторию немного раньше, чтобы всё подготовить. Мы рекомендуем показывать слайды с помощью `mdbook serve`, запущенного на вашем ноутбуке (см. [инструкцию по установке](https://github.com/r007/EmbeddedRust-Rus/tree/main/comprehensive-rust#building)). Это обеспечивает оптимальную производительность без задержек при смене страниц. Использование ноутбука также позволит вам исправлять опечатки по мере их обнаружения вами или участниками курса."
 
 #: src/running-the-course.md
 msgid "Let people solve the exercises by themselves or in small groups. We typically spend 30-45 minutes on exercises in the morning and in the afternoon (including time to review the solutions). Make sure to ask people if they're stuck or if there is anything you can help with. When you see that several people have the same problem, call it out to the class and offer a solution, e.g., by showing people where to find the relevant information in the standard library."
@@ -2413,7 +2413,7 @@ msgstr "Глубокое погружение"
 
 #: src/running-the-course/course-structure.md
 msgid "In addition to the 4-day class on Rust Fundamentals, we cover some more specialized topics:"
-msgstr "В дополнение к 4-х дневному курсу по основам Rust, мы рассмотрим ещё несколько специализированных тем:"
+msgstr "В дополнение к четырёхдневному курсу по основам Rust мы рассмотрим ещё несколько специализированных тем:"
 
 #: src/running-the-course/course-structure.md
 msgid "Rust in Android"
@@ -2425,7 +2425,7 @@ msgstr "Углублённый курс [Rust в Android](../android.md) зан�
 
 #: src/running-the-course/course-structure.md
 msgid "You will need an [AOSP checkout](https://source.android.com/docs/setup/download/downloading). Make a checkout of the [course repository](https://github.com/google/comprehensive-rust) on the same machine and move the `src/android/` directory into the root of your AOSP checkout. This will ensure that the Android build system sees the `Android.bp` files in `src/android/`."
-msgstr "Вам потребуется [AOSP](https://source.android.com/docs/setup/download/downloading). Загрузите [репозиторий курса](https://github.com/r007/EmbeddedRust-Rus/tree/main/comprehensive-rust) на тот же компьютер, что и курс и переместите каталог `src/android/` в корневой каталог вашего AOSP. Это гарантирует, что система сборки Android увидит файлы `Android.bp` в `src/android/`."
+msgstr "Вам потребуется [AOSP](https://source.android.com/docs/setup/download/downloading). Загрузите [репозиторий курса](https://github.com/r007/EmbeddedRust-Rus/tree/main/comprehensive-rust) на тот же компьютер, что и AOSP, и переместите каталог `src/android/` в корневой каталог вашего AOSP. Это гарантирует, что система сборки Android увидит файлы `Android.bp` в `src/android/`."
 
 #: src/running-the-course/course-structure.md
 msgid "Ensure that `adb sync` works with your emulator or real device and pre-build all Android examples using `src/android/build_all.sh`. Read the script to see the commands it runs and make sure they work when you run them by hand."
@@ -2530,7 +2530,7 @@ msgstr "Формат"
 
 #: src/running-the-course/course-structure.md
 msgid "The course is meant to be very interactive and we recommend letting the questions drive the exploration of Rust!"
-msgstr "Курс задуман весьма интерактивным, и мы рекомендуем, чтобы вопросы содействовали изучению Rust!"
+msgstr "Курс задуман очень интерактивным, и мы рекомендуем позволять вопросам направлять изучение Rust!"
 
 #: src/running-the-course/keyboard-shortcuts.md
 msgid "There are several useful keyboard shortcuts in mdBook:"
@@ -2642,7 +2642,7 @@ msgstr "Полный список переводов с их текущим ст
 
 #: src/running-the-course/translations.md
 msgid "If you want to help with this effort, please see [our instructions](https://github.com/google/comprehensive-rust/blob/main/TRANSLATIONS.md) for how to get going. Translations are coordinated on the [issue tracker](https://github.com/google/comprehensive-rust/issues/282)."
-msgstr "Если вы хотите помочь в этом, пожалуйста, ознакомьтесь с [our instructions](https://github.com/r007/EmbeddedRust-Rus/blob/main/comprehensive-rust/TRANSLATIONS.md) о том, как приступить к работе. Переводы координируются с помощью [issue tracker](https://github.com/r007/EmbeddedRust-Rus/issues/282)."
+msgstr "Если вы хотите помочь в этом, пожалуйста, прочитайте [наши инструкции](https://github.com/r007/EmbeddedRust-Rus/blob/main/comprehensive-rust/TRANSLATIONS.md) о том, как приступить к работе. Переводы координируются в [трекере задач](https://github.com/r007/EmbeddedRust-Rus/issues/282)."
 
 #: src/running-the-course/translations.md
 msgid "This is a good opportunity to thank the volunteers who have contributed to the translations."
@@ -2698,11 +2698,11 @@ msgstr "`rustc`: компилятор Rust, который превращает 
 
 #: src/cargo/rust-ecosystem.md
 msgid "`cargo`: the Rust dependency manager and build tool. Cargo knows how to download dependencies, usually hosted on <https://crates.io>, and it will pass them to `rustc` when building your project. Cargo also comes with a built-in test runner which is used to execute unit tests."
-msgstr "`cargo`: менеджер зависимостей и система сборки Rust. Cargo умеет загружать зависимости, обычно размещённые на <https://crates.io>, и передавать их `rustc` при сборке проекта. Cargo также включает встроенный запускатель тестов, который выполняет модульные тесты."
+msgstr "`cargo`: менеджер зависимостей и система сборки Rust. Cargo умеет загружать зависимости, обычно размещённые на <https://crates.io>, и передавать их `rustc` при сборке проекта. Cargo также включает встроенное средство запуска тестов, которое выполняет модульные тесты."
 
 #: src/cargo/rust-ecosystem.md
 msgid "`rustup`: the Rust toolchain installer and updater. This tool is used to install and update `rustc` and `cargo` when new versions of Rust are released. In addition, `rustup` can also download documentation for the standard library. You can have multiple versions of Rust installed at once and `rustup` will let you switch between them as needed."
-msgstr "`rustup`: установщик и обновитель инструментария Rust. Этот инструмент используется для установки и обновления `rustc` и `cargo` при выходе новых версий Rust. Кроме того, `rustup` может загружать документацию стандартной библиотеки. Можно одновременно установить несколько версий Rust, и `rustup` позволит переключаться между ними по мере необходимости."
+msgstr "`rustup`: установщик и средство обновления инструментария Rust. Этот инструмент используется для установки и обновления `rustc` и `cargo` при выходе новых версий Rust. Кроме того, `rustup` может загружать документацию стандартной библиотеки. Можно одновременно установить несколько версий Rust, и `rustup` позволит переключаться между ними по мере необходимости."
 
 #: src/cargo/rust-ecosystem.md src/types-and-values/hello-world.md src/references/exclusive.md src/memory-management/move.md src/error-handling/try.md src/unsafe-rust/unsafe-functions/calling.md src/android/setup.md src/concurrency/async/async-await.md
 msgid "Key points:"
@@ -2710,15 +2710,15 @@ msgstr "Ключевые моменты:"
 
 #: src/cargo/rust-ecosystem.md
 msgid "Rust has a rapid release schedule with a new release coming out every six weeks. New releases maintain backwards compatibility with old releases --- plus they enable new functionality."
-msgstr "У Rust стремительный график релизов: новая версия выходит каждые шесть недель. Новые версии поддерживают обратную совместимость со старыми версиями --- в дополнение они предоставляют новые функциональные возможности."
+msgstr "У Rust стремительный график релизов: новая версия выходит каждые шесть недель. Новые версии обратно совместимы со старыми и при этом добавляют новые возможности."
 
 #: src/cargo/rust-ecosystem.md
 msgid "There are three release channels: \"stable\", \"beta\", and \"nightly\"."
-msgstr "Существует три вида релизов: ”stable”, ”beta” и ”nightly”."
+msgstr "Существует три вида релизов: «stable», «beta» и «nightly»."
 
 #: src/cargo/rust-ecosystem.md
 msgid "New features are being tested on \"nightly\", \"beta\" is what becomes \"stable\" every six weeks."
-msgstr "Новые функции тестируются на ”nightly”, ”beta” --- это то, что становится ”stable” каждые шесть недель."
+msgstr "Новые возможности тестируются в «nightly», а «beta» --- это то, что становится «stable» каждые шесть недель."
 
 #: src/cargo/rust-ecosystem.md
 msgid "Dependencies can also be resolved from alternative [registries](https://doc.rust-lang.org/cargo/reference/registries.html), git, folders, and more."
@@ -2730,7 +2730,7 @@ msgstr "У Rust также есть [редакции](https://doc.rust-lang.org
 
 #: src/cargo/rust-ecosystem.md
 msgid "The editions are allowed to make backwards incompatible changes to the language."
-msgstr "Редакциями позволено вносить обратно--несовместимые изменения в язык."
+msgstr "Редакциями позволено вносить обратно несовместимые изменения в язык."
 
 #: src/cargo/rust-ecosystem.md
 msgid "To prevent breaking code, editions are opt-in: you select the edition for your crate via the `Cargo.toml` file."
@@ -2754,7 +2754,7 @@ msgstr "Структура проекта/пакета"
 
 #: src/cargo/rust-ecosystem.md
 msgid "[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)"
-msgstr "[workspaces](https://doc.rust-lang.org/cargo/reference/workspaces.html)"
+msgstr "[рабочие пространства (workspaces)](https://doc.rust-lang.org/cargo/reference/workspaces.html)"
 
 #: src/cargo/rust-ecosystem.md
 msgid "Dev Dependencies and Runtime Dependency management/caching"
@@ -2762,11 +2762,11 @@ msgstr "Управление зависимостями для разработ�
 
 #: src/cargo/rust-ecosystem.md
 msgid "[build scripting](https://doc.rust-lang.org/cargo/reference/build-scripts.html)"
-msgstr "[build scripting](https://doc.rust-lang.org/cargo/reference/build-scripts.html)"
+msgstr "[скрипты сборки (build scripts)](https://doc.rust-lang.org/cargo/reference/build-scripts.html)"
 
 #: src/cargo/rust-ecosystem.md
 msgid "[global installation](https://doc.rust-lang.org/cargo/commands/cargo-install.html)"
-msgstr "[global installation](https://doc.rust-lang.org/cargo/commands/cargo-install.html)"
+msgstr "[глобальная установка (`cargo install`)](https://doc.rust-lang.org/cargo/commands/cargo-install.html)"
 
 #: src/cargo/rust-ecosystem.md
 msgid "It is also extensible with sub command plugins as well (such as [cargo clippy](https://github.com/rust-lang/rust-clippy))."
@@ -2774,7 +2774,7 @@ msgstr "Он также расширяем с помощью плагинов п
 
 #: src/cargo/rust-ecosystem.md
 msgid "Read more from the [official Cargo Book](https://doc.rust-lang.org/cargo/)"
-msgstr "Подробнее читайте в [official Cargo Book](https://doc.rust-lang.org/cargo/)"
+msgstr "Подробнее читайте в [официальной книге по Cargo](https://doc.rust-lang.org/cargo/)"
 
 #: src/cargo/code-samples.md
 msgid "Code Samples in This Training"
@@ -2826,7 +2826,7 @@ msgstr "Запуск кода локально с помощью Cargo"
 
 #: src/cargo/running-locally.md
 msgid "If you want to experiment with the code on your own system, then you will need to first install Rust. Do this by following the [instructions in the Rust Book](https://doc.rust-lang.org/book/ch01-01-installation.html). This should give you a working `rustc` and `cargo`. At the time of writing, the latest stable Rust release has these version numbers:"
-msgstr "Если вы хотите поэкспериментировать с кодом на своей системе, то вам нужно будет сначала установить Rust. Сделайте это, следуя [инструкциям в The Rust Book](https://doc.rust-lang.org/book/ch01-01-installation.html). В вашей системе появятся инструменты `rustc` и `cargo`. На момент написания статьи последний стабильный выпуск Rust имеет следующие версии:"
+msgstr "Если вы хотите поэкспериментировать с кодом на своей системе, то вам нужно будет сначала установить Rust. Сделайте это, следуя [инструкциям в The Rust Book](https://doc.rust-lang.org/book/ch01-01-installation.html). В вашей системе появятся инструменты `rustc` и `cargo`. На момент написания курса последний стабильный выпуск Rust имеет следующие версии:"
 
 #: src/cargo/running-locally.md
 msgid "You can use any later version too since Rust maintains backwards compatibility."
@@ -2838,15 +2838,15 @@ msgstr "После этого выполните следующие шаги, ч
 
 #: src/cargo/running-locally.md
 msgid "Click the \"Copy to clipboard\" button on the example you want to copy."
-msgstr "Нажмите кнопку ”Copy to clipboard” на примере кода, который вы хотите скопировать."
+msgstr "Нажмите кнопку «Copy to clipboard» на примере кода, который вы хотите скопировать."
 
 #: src/cargo/running-locally.md
 msgid "Use `cargo new exercise` to create a new `exercise/` directory for your code:"
-msgstr "Используйте `cargo new exercise`, чтобы создать новую директорию `exercise/` для вашего кода:"
+msgstr "Используйте `cargo new exercise`, чтобы создать новый каталог `exercise/` для вашего кода:"
 
 #: src/cargo/running-locally.md
 msgid "Navigate into `exercise/` and use `cargo run` to build and run your binary:"
-msgstr "Перейдите в директорию `exercise/` и выполните `cargo run` для сборки и запуска исполняемого файла:"
+msgstr "Перейдите в каталог `exercise/` и выполните `cargo run` для сборки и запуска исполняемого файла:"
 
 #: src/cargo/running-locally.md
 msgid "Replace the boilerplate code in `src/main.rs` with your own code. For example, using the example on the previous page, make `src/main.rs` look like"
@@ -2858,7 +2858,7 @@ msgstr "Используйте `cargo run` для сборки и запуска
 
 #: src/cargo/running-locally.md
 msgid "Use `cargo check` to quickly check your project for errors, use `cargo build` to compile it without running it. You will find the output in `target/debug/` for a normal debug build. Use `cargo build --release` to produce an optimized release build in `target/release/`."
-msgstr "Используйте `cargo check` для быстрой проверки проекта на наличие ошибок и `cargo build` для компиляции проекта без его запуска. Вы найдете результат в директории `target/debug/` для отладочной сборки. Используйте `cargo build --release` для создания оптимизированной финальной сборки в `target/release/`."
+msgstr "Используйте `cargo check` для быстрой проверки проекта на наличие ошибок и `cargo build` для компиляции проекта без его запуска. Вы найдёте результат в каталоге `target/debug/` для отладочной сборки. Используйте `cargo build --release` для создания оптимизированной финальной сборки в `target/release/`."
 
 #: src/cargo/running-locally.md
 msgid "You can add dependencies for your project by editing `Cargo.toml`. When you run `cargo` commands, it will automatically download and compile missing dependencies for you."
@@ -2922,7 +2922,7 @@ msgstr "Часто вопросы будут приводить к обсужд�
 
 #: src/welcome-day-1.md
 msgid "This is perfectly okay! Repetition is an important part of learning. Remember that the slides are just a support and you are free to skip them as you like."
-msgstr "Это совершенно нормально! Повторение --- важная часть обучения. Помните, что слайды --- это всего лишь вспомогательный материал, и вы вольны пропускать их по  своему усмотрению."
+msgstr "Это совершенно нормально! Повторение --- важная часть обучения. Помните, что слайды --- это всего лишь вспомогательный материал, и вы вольны пропускать их по своему усмотрению."
 
 #: src/welcome-day-1.md
 msgid "The idea for the first day is to show the \"basic\" things in Rust that should have immediate parallels in other languages. The more advanced parts of Rust come on the subsequent days."
@@ -3114,7 +3114,7 @@ msgstr "Обязательно спросите учащихся, с каким�
 
 #: src/hello-world/benefits.md
 msgid "Experience with C or C++: Rust eliminates a whole class of _runtime errors_ via the borrow checker. You get performance like in C and C++, but you don't have the memory unsafety issues. In addition, you get a modern language with constructs like pattern matching and built-in dependency management."
-msgstr "Опыт работы с C или C++: Rust устраняет целый класс _ошибок времени выполнения_ с помощью анализатора заимствований. Вы получаете производительность, как в C и C++, минуя проблем с безопасностью памяти. Кроме того, вы получаете современный язык с такими конструкциями, как сопоставление с образцом и встроенное управление зависимостями."
+msgstr "Опыт работы с C или C++: Rust устраняет целый класс _ошибок времени выполнения_ с помощью анализатора заимствований. Вы получаете производительность, как в C и C++, не сталкиваясь с проблемами безопасности памяти. Кроме того, вы получаете современный язык с такими конструкциями, как сопоставление с образцом и встроенное управление зависимостями."
 
 #: src/hello-world/benefits.md
 msgid "Experience with Java, Go, Python, JavaScript...: You get the same memory safety as in those languages, plus a similar high-level language feeling. In addition you get fast and predictable performance like C and C++ (no garbage collector) as well as access to low-level hardware (should you need it)."
@@ -3146,7 +3146,7 @@ msgstr "Этот сегмент займёт около 40 минут. Он вк
 
 #: src/types-and-values/hello-world.md
 msgid "Let us jump into the simplest possible Rust program, a classic Hello World program:"
-msgstr "Давайте перейдём к самой простой из возможных программ на Rust, классической программе Привет, мир!"
+msgstr "Давайте перейдём к самой простой из возможных программ на Rust, классической программе «Привет, мир!»"
 
 #: src/types-and-values/hello-world.md src/control-flow-basics/if.md src/control-flow-basics/match.md src/control-flow-basics/loops/for.md src/control-flow-basics/loops/loop.md src/control-flow-basics/break-continue/labels.md src/tuples-and-arrays/arrays.md src/references/strings.md src/references/dangling.md src/user-defined-types/static.md src/pattern-matching/match.md src/methods-and-traits/traits/implementing.md src/methods-and-traits/traits/supertraits.md src/methods-and-traits/traits/associated-types.md src/generics/generic-traits.md src/generics/dyn-trait.md src/smart-pointers/trait-objects.md src/borrowing/examples.md src/lifetimes/lifetime-elision.md src/lifetimes/struct-lifetimes.md src/lifetimes/exercise.md src/lifetimes/solution.md src/iterators/for.md src/iterators/motivation.md src/iterators/helpers.md src/iterators/collect.md src/modules/encapsulation.md src/error-handling/thiserror.md src/error-handling/anyhow.md src/android/aidl/example-service/service-bindings.md src/android/aidl/example-service/service.md src/android/aidl/example-service/server.md src/android/aidl/example-service/client.md src/android/aidl/example-service/changing-definition.md src/android/aidl/example-service/changing-implementation.md src/android/aidl/types/objects.md src/android/aidl/types/parcelables.md src/android/aidl/types/file-descriptor.md src/android/testing.md src/android/testing/googletest.md src/android/testing/mocking.md src/concurrency/threads/plain.md src/concurrency/threads/scoped.md src/concurrency/channels/senders-receivers.md src/concurrency/shared-state/arc.md src/concurrency/shared-state/mutex.md src/concurrency/shared-state/example.md src/concurrency/sync-exercises/dining-philosophers.md src/concurrency/sync-exercises/link-checker.md src/concurrency/sync-exercises/solutions.md src/concurrency/async/async-await.md src/concurrency/async/futures.md src/concurrency/async/runtimes/tokio.md src/concurrency/async/tasks.md src/concurrency/async-control-flow/channels.md src/concurrency/async-control-flow/join.md src/concurrency/async-control-flow/select.md src/concurrency/async-pitfalls/blocking-executor.md src/concurrency/async-pitfalls/pin.md src/concurrency/async-pitfalls/async-traits.md src/concurrency/async-pitfalls/cancellation.md src/concurrency/async-exercises/dining-philosophers.md src/concurrency/async-exercises/chat-app.md src/concurrency/async-exercises/solutions.md
 msgid "// Copyright 2024 Google LLC\n"
@@ -3385,7 +3385,7 @@ msgstr "Здесь очень важно отметить, что это отн�
 # Number i18n seems inapplicable here.
 #: src/types-and-values/inference.md
 msgid "When nothing constrains the type of an integer literal, Rust defaults to `i32`. This sometimes appears as `{integer}` in error messages. Similarly, floating-point literals default to `f64`."
-msgstr "По умолчанию, в отсутствие ограничений, тип целочисленого литерала будет выведен как `i32`. Что в сообщениях об ошибках иногда показывается как `{integer}`. Аналогично, умолчание для литералов чисел с плавающей точкой --- `f64`"
+msgstr "По умолчанию, в отсутствие ограничений, тип целочисленного литерала будет выведен как `i32`. В сообщениях об ошибках он иногда отображается как `{integer}`. Аналогично, умолчание для литералов чисел с плавающей точкой --- `f64`"
 
 # Localization of Rust error messages doesn't seem to be complete.
 # https://github.com/rust-lang/rfcs/issues/1843
@@ -3574,7 +3574,7 @@ msgstr "\"huge\""
 
 #: src/control-flow-basics/if.md
 msgid "In addition, you can use `if` as an expression. The last expression of each block becomes the value of the `if` expression:"
-msgstr "Помимо этого, можно использовать `if` как выражение. Последнее выражение  внутри одного из блоков (в зависимости от значения условия) становится  значением всего выражения `if`:"
+msgstr "Помимо этого, можно использовать `if` как выражение. Последнее выражение внутри одного из блоков (в зависимости от значения условия) становится значением всего выражения `if`:"
 
 #: src/control-flow-basics/if.md
 msgid "\"small\""
@@ -3714,7 +3714,7 @@ msgstr "\"This line gets skipped\""
 
 #: src/control-flow-basics/functions.md
 msgid "Declaration parameters are followed by a type (the reverse of some programming languages), then a return type."
-msgstr "В объявлении функции за каждым параметром следует его тип (противоположно некоторым языкам программирования), затем тип возвращаемого значения."
+msgstr "В объявлении функции за каждым параметром следует его тип (в отличие от некоторых языков программирования), затем тип возвращаемого значения."
 
 #: src/control-flow-basics/functions.md
 msgid "The last expression in a function body (or any block) becomes the return value. Simply omit the `;` at the end of the expression. The `return` keyword can be used for early return, but the \"bare value\" form is idiomatic at the end of a function (refactor `gcd` to use a `return`)."
@@ -3902,7 +3902,7 @@ msgstr "Массивы также можно инициализировать к
 
 #: src/tuples-and-arrays/arrays.md
 msgid "A value of the array type `[T; N]` holds `N` (a compile-time constant) elements of the same type `T`. Note that the length of the array is _part of its type_, which means that `[u8; 3]` and `[u8; 4]` are considered two different types. Slices, which have a size determined at runtime, are covered later."
-msgstr "Значение массива `[T; N]` содержит `N` элементов одинакового типа `T`. Где `N` (длина массива) --- это константа времени компиляции. Следует обратить внимание, что длина является _частью типа_, как следствие `[u8; 3]` и `[u8; 4]` --- это разные типы. Срезы, длина которых определяется во время выполнения, рассматриваются в курсе позднее."
+msgstr "Значение массива `[T; N]` содержит `N` элементов одинакового типа `T`. Где `N` (длина массива) --- это константа времени компиляции. Обратите внимание: длина является _частью типа_, поэтому `[u8; 3]` и `[u8; 4]` --- это разные типы. Срезы, длина которых определяется во время выполнения, рассматриваются в курсе позднее."
 
 #: src/tuples-and-arrays/arrays.md
 msgid "Try accessing an out-of-bounds array element. The compiler is able to determine that the index is unsafe, and will not compile the code:"
@@ -3937,11 +3937,11 @@ msgstr "Отладочный вывод"
 # Should not that much confuse attendees, since it's in the speaker notes.
 #: src/tuples-and-arrays/arrays.md
 msgid "The `println!` macro asks for the debug implementation with the `?` format parameter: `{}` gives the default output, `{:?}` gives the debug output. Types such as integers and strings implement the default output, but arrays only implement the debug output. This means that we must use debug output here."
-msgstr "Параметр форматирования `?` предписывает макросу `println!` запросить реализацию трейта отладочного вывода: `{}` запрашивает форматирование по умолчанию (`std::fmt::Display`), `{:?}` -- отладочное представление (`std::fmt::Debug`). Другие, например, целочисленные типы и строки реализуют трейт `Display`, но для массовов реализован только трейт `Debug`. Поэтому использование `{:?}` здесь обязательно."
+msgstr "Параметр форматирования `?` предписывает макросу `println!` запросить реализацию трейта отладочного вывода: `{}` запрашивает форматирование по умолчанию (`std::fmt::Display`), `{:?}` -- отладочное представление (`std::fmt::Debug`). Например, целочисленные типы и строки реализуют трейт `Display`, но для массивов реализован только трейт `Debug`. Поэтому использование `{:?}` здесь обязательно."
 
 #: src/tuples-and-arrays/arrays.md
 msgid "Adding `#`, eg `{a:#?}`, invokes a \"pretty printing\" format, which can be easier to read."
-msgstr "Добавление `#`, например `{a:#?}`, позволяет использовать более наглядный формат \"красивой печати\", с отступами и переносами строк."
+msgstr "Добавление `#`, например `{a:#?}`, позволяет использовать более наглядный формат «красивой печати» с отступами и переносами строк."
 
 #: src/tuples-and-arrays/tuples.md
 msgid "Like arrays, tuples have a fixed length."
@@ -3953,11 +3953,11 @@ msgstr "Кортежи группируют значения разных тип
 
 #: src/tuples-and-arrays/tuples.md
 msgid "Fields of a tuple can be accessed by the period and the index of the value, e.g. `t.0`, `t.1`."
-msgstr "Доступ к полям кортежа можно получить используя точку и индекс значения, например `t.0`, `t.1`."
+msgstr "Доступ к полям кортежа можно получить с помощью точки и индекса значения, например `t.0`, `t.1`."
 
 #: src/tuples-and-arrays/tuples.md
 msgid "The empty tuple `()` is referred to as the \"unit type\" and signifies absence of a return value, akin to `void` in other languages."
-msgstr "Пустой кортеж `()` называется _единичным типом_ и обозначает пустое значение или пустой возвращаемый тип. Сходно с использованием `void` в других языках."
+msgstr "Пустой кортеж `()` называется _единичным типом_ и обозначает пустое значение или пустой возвращаемый тип. Похоже на `void` в других языках."
 
 #: src/tuples-and-arrays/tuples.md
 msgid "Unlike arrays, tuples cannot be used in a `for` loop. This is because a `for` loop requires all the elements to have the same type, which may not be the case for a tuple."
@@ -3998,7 +3998,7 @@ msgstr "\"unordered\""
 
 #: src/tuples-and-arrays/destructuring.md
 msgid "The patterns used here are \"irrefutable\", meaning that the compiler can statically verify that the value on the right of `=` has the same structure as the pattern."
-msgstr "Используемые здесь шаблоны являются \"неопровержимыми\", что означает, что компилятор может статически проверить, что значение справа от `=` имеет ту же структуру, что и шаблон."
+msgstr "Используемые здесь шаблоны являются «неопровержимыми», то есть компилятор может статически проверить, что значение справа от `=` имеет ту же структуру, что и шаблон."
 
 #: src/tuples-and-arrays/destructuring.md
 msgid "A variable name is an irrefutable pattern that always matches any value, hence why we can also use `let` to declare a single variable."
@@ -4118,7 +4118,7 @@ msgstr "В некоторых случаях Rust автоматически р�
 
 #: src/references/shared.md
 msgid "In this example, `r` is mutable so that it can be reassigned (`r = &b`). Note that this re-binds `r`, so that it refers to something else. This is different from C++, where assignment to a reference changes the referenced value."
-msgstr "В этом примере `r` объявлена изменяемой, чтобы её можно было переназначить (`r = &b`). Обратите внимание, что это перепривязывает `r`, так что она теперь ссылается на другое значение. Это отличается от C++, где присваивание ссылке меняет значение, на которое она указывает."
+msgstr "В этом примере `r` объявлена изменяемой, чтобы её можно было переназначить (`r = &b`). Обратите внимание, что это меняет привязку `r`: она теперь ссылается на другое значение. Это отличается от C++, где присваивание ссылке меняет значение, на которое она указывает."
 
 #: src/references/shared.md
 msgid "A shared reference does not allow modifying the value it refers to, even if that value was mutable. Try `*r = 'X'`."
@@ -4158,7 +4158,7 @@ msgstr "Мы создаем срез, заимствуя `a` и указывая
 
 #: src/references/slices.md
 msgid "If the slice starts at index 0, Rust’s range syntax allows us to drop the starting index, meaning that `&a[0..a.len()]` and `&a[..a.len()]` are identical."
-msgstr "Если срез начинается с индекса 0, синтаксис Rust позволяет отбросить начальный индекс, таким образом, `&a[0..a.len()]` и `&a[..a.len()]` идентичны ."
+msgstr "Если срез начинается с индекса 0, синтаксис Rust позволяет отбросить начальный индекс, таким образом, `&a[0..a.len()]` и `&a[..a.len()]` идентичны."
 
 #: src/references/slices.md
 msgid "The same is true for the last index, so `&a[2..a.len()]` and `&a[2..]` are identical."
@@ -4186,7 +4186,7 @@ msgstr "Нельзя добавлять элементы в срез, так к�
 
 #: src/references/slices.md
 msgid "You can't grow a slice to point to a larger section of the backing buffer. A slice does not have information about the length of the underlying buffer and so you can't know how large the slice can be grown."
-msgstr "Нельзя расширить срез так, чтобы он указывал на бо́льшую часть нижележащего буфера. Срез не знает длины нижележащего буфера, поэтому нельзя понять, насколько его можно расширить."
+msgstr "Нельзя расширить срез так, чтобы он указывал на больший участок нижележащего буфера. Срез не знает длины нижележащего буфера, поэтому нельзя понять, насколько его можно расширить."
 
 #: src/references/slices.md
 msgid "To get a larger slice you have to go back to the original buffer and create a larger slice from there."
@@ -4202,7 +4202,7 @@ msgstr "`&str` --- это срез из байтов в кодировке UTF-8
 
 #: src/references/strings.md
 msgid "`String` is an owned buffer of UTF-8 encoded bytes, similar to `Vec<T>`."
-msgstr "`String` --- это принадлежащий владельцу буфер из байтов в кодировке UTF-8, похожий на `Vec<T>`."
+msgstr "`String` --- это владеющий буфер из байтов в кодировке UTF-8, похожий на `Vec<T>`."
 
 #: src/references/strings.md src/std-traits/read-and-write.md
 msgid "\"World\""
@@ -4230,7 +4230,7 @@ msgstr "`&str` задаёт строковый срез --- неизменяем
 
 #: src/references/strings.md
 msgid "Rust's `String` type is a wrapper around a vector of bytes. As with a `Vec<T>`, it is owned."
-msgstr "Тип `String` в Rust --- это обёртка над вектором байтов. Как и `Vec<T>`, он принадлежит владельцу."
+msgstr "Тип `String` в Rust --- это обёртка над вектором байтов. Как и `Vec<T>`, он владеет своими данными."
 
 #: src/references/strings.md
 msgid "As with many other types `String::from()` creates a string from a string literal; `String::new()` creates a new empty string, to which string data can be added using the `push()` and `push_str()` methods."
@@ -4238,7 +4238,7 @@ msgstr "Как и многие другие типы, `String::from()` созд�
 
 #: src/references/strings.md
 msgid "The `format!()` macro is a convenient way to generate an owned string from dynamic values. It accepts the same format specification as `println!()`."
-msgstr "Макрос `format!()` --- удобный способ создать принадлежащую владельцу строку из динамических значений. Он принимает ту же спецификацию формата, что и `println!()`."
+msgstr "Макрос `format!()` --- удобный способ создать владеющую строку из динамических значений. Он принимает ту же спецификацию формата, что и `println!()`."
 
 #: src/references/strings.md
 msgid "You can borrow `&str` slices from `String` via `&` and optionally range selection. If you select a byte range that is not aligned to character boundaries, the expression will panic. The `chars` iterator iterates over characters and is preferred over trying to get character boundaries right."
@@ -4996,7 +4996,7 @@ msgstr "Тот же эффект возникает с `match &mut m`: захв�
 
 #: src/pattern-matching/destructuring-structs.md
 msgid "The distinction between a capture and a constant expression can be hard to spot. Try changing the `0` in the first arm to a variable, and see that it subtly doesn't work. Change it to a `const` and see it working again."
-msgstr "Различие между захватом и константным выражением может быть трудно заметить. Попробуйте заменить `0` в первой ветке на переменную и посмотрите, что тонко перестаёт работать. Замените на `const`, и всё снова заработает."
+msgstr "Различие между захватом и константным выражением может быть трудно заметить. Попробуйте заменить `0` в первой ветке на переменную и посмотрите, что при этом незаметно перестаёт работать. Замените на `const`, и всё снова заработает."
 
 #: src/pattern-matching/destructuring-enums.md
 msgid "Like tuples, enums can also be destructured by matching:"
@@ -5060,7 +5060,7 @@ msgstr "Выражение `let else`"
 
 #: src/pattern-matching/let-control-flow/if-let.md
 msgid "The [`if let` expression](https://doc.rust-lang.org/reference/expressions/if-expr.html#if-let-expressions) lets you execute different code depending on whether a value matches a pattern:"
-msgstr "[Выражение `if let`](https://doc.rust-lang.org/reference/expressions/if-expr.html#if-let-expressions) позволяет выполнять разные ветки кода в зависимости от того, соответствует ли какое-либо  значение шаблону или нет:"
+msgstr "[Выражение `if let`](https://doc.rust-lang.org/reference/expressions/if-expr.html#if-let-expressions) позволяет выполнять разные ветки кода в зависимости от того, соответствует ли какое-либо значение шаблону или нет:"
 
 #: src/pattern-matching/let-control-flow/if-let.md
 msgid "\"slept for {duration:?}\""
@@ -5068,7 +5068,7 @@ msgstr "\"slept for {duration:?}\""
 
 #: src/pattern-matching/let-control-flow/if-let.md
 msgid "Unlike `match`, `if let` does not have to cover all branches. This can make it more concise than `match`."
-msgstr "`if let` может быть более лаконично, чем `match`. Например, когда нужно проверить только один вариант. Выражение `match`, напротив, требует проверки всех вариантов."
+msgstr "`if let` может быть лаконичнее, чем `match`. Например, когда нужно проверить только один вариант. Выражение `match`, напротив, требует проверки всех вариантов."
 
 #: src/pattern-matching/let-control-flow/if-let.md
 msgid "A common usage is handling `Some` values when working with `Option`."
@@ -5100,7 +5100,7 @@ msgstr "Здесь [`String::pop`](https://doc.rust-lang.org/stable/std/string/s
 
 #: src/pattern-matching/let-control-flow/while-let.md
 msgid "Point out that the `while let` loop will keep going as long as the value matches the pattern."
-msgstr "Уточнить, что циклы `while let` будут продолжаться до тех пор, пока значение будет соответствовать шаблону."
+msgstr "Уточните, что циклы `while let` продолжаются, пока значение соответствует шаблону."
 
 #: src/pattern-matching/let-control-flow/while-let.md
 msgid "You could rewrite the `while let` loop as an infinite loop with an if statement that breaks when there is no value to unwrap for `name.pop()`. The `while let` provides syntactic sugar for the above scenario."
@@ -5416,7 +5416,7 @@ msgstr "Не все `.clone()` в примере выше здесь необх�
 
 #: src/methods-and-traits/exercise.md
 msgid "Let's design a simple logging utility, using a trait `Logger` with a `log` method. Code that might log its progress can then take an `&impl Logger`. In testing, this might put messages in the test logfile, while in a production build it would send messages to a log server."
-msgstr "Давайте спроектируем простую утилиту логирования с трейтом `Logger`, у которого есть метод `log`. Код, который может записывать ход своей работы, затем может принимать `&impl Logger`. В тестах это может записывать сообщения в файл журнала тестов, а в производственной сборке --- отправлять сообщения на сервер логов."
+msgstr "Давайте спроектируем простую утилиту логирования с трейтом `Logger`, у которого есть метод `log`. Код, который может записывать ход своей работы, затем может принимать `&impl Logger`. В тестах это может записывать сообщения в файл журнала тестов, а в рабочей (production) сборке --- отправлять сообщения на сервер логов."
 
 #: src/methods-and-traits/exercise.md
 msgid "However, the `StderrLogger` given below logs all messages, regardless of verbosity. Your task is to write a `VerbosityFilter` type that will ignore messages above a maximum verbosity."
@@ -5496,7 +5496,7 @@ msgstr "В этом примере для `T` мы используем толь
 
 #: src/generics/generic-functions.md
 msgid "This is similar to C++ templates, but Rust partially compiles the generic function immediately, so that function must be valid for all types matching the constraints. For example, try modifying `pick` to return `left + right` if `cond` is false. Even if only the `pick` instantiation with integers is used, Rust still considers it invalid. C++ would let you do this."
-msgstr "Это похоже на шаблоны C++, но Rust частично компилирует обобщённую функцию сразу, поэтому функция должна быть корректна для всех типов, удовлетворяющих ограничениям. Например, попробуйте изменить `pick`, чтобы он возвращал `left + right`, если `cond` ложно. Даже если используется только инстанциация `pick` для целых, Rust всё равно считает код некорректным. C++ позволил бы сделать это."
+msgstr "Это похоже на шаблоны C++, но Rust частично компилирует обобщённую функцию сразу, поэтому функция должна быть корректна для всех типов, удовлетворяющих ограничениям. Например, попробуйте изменить `pick`, чтобы он возвращал `left + right`, если `cond` ложно. Даже если используется только версия `pick` для целых чисел, Rust всё равно считает код некорректным. C++ позволил бы сделать это."
 
 #: src/generics/generic-functions.md
 msgid "Generic code is turned into non-generic code based on the call sites. This is a zero-cost abstraction: you get exactly the same result as if you had hand-coded the data structures without the abstraction."
@@ -6002,7 +6002,7 @@ msgstr ""
 
 #: src/std-types/docs.md
 msgid "The contents are treated as Markdown. All published Rust library crates are automatically documented at [`docs.rs`](https://docs.rs) using the [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html) tool. It is idiomatic to document all public items in an API using this pattern."
-msgstr "Содержимое интерпретируется как Markdown. Все опубликованные крейты библиотек Rust автоматически документируются на [`docs.rs`](https://docs.rs) с помощью инструмента [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html). Документирование всех общедоступных элементов API используя этот подход является идиоматичным."
+msgstr "Содержимое интерпретируется как Markdown. Все опубликованные крейты библиотек Rust автоматически документируются на [`docs.rs`](https://docs.rs) с помощью инструмента [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html). Документировать таким образом все общедоступные элементы API --- идиоматичный подход."
 
 #: src/std-types/docs.md
 msgid "To document an item from inside the item (such as inside a module), use `//!` or `/*! .. */`, called \"inner doc comments\":"
@@ -6050,7 +6050,7 @@ msgstr "Можно вызвать панику при `None`, но нельзя 
 
 #: src/std-types/option.md
 msgid "It's common to `unwrap`/`expect` all over the place when hacking something together, but production code typically handles `None` in a nicer fashion."
-msgstr "Когда что-то собирают на скорую руку, часто используют `unwrap`/`expect` повсюду, но производственный код обычно обрабатывает `None` более аккуратно."
+msgstr "Когда что-то собирают на скорую руку, часто используют `unwrap`/`expect` повсюду, но рабочий код обычно обрабатывает `None` более аккуратно."
 
 #: src/std-types/option.md
 msgid "Many of methods on `Option` such as `insert` and `take` can be viewed as treating it like a container with room for at most one element. Methods with similar names and behaviors exist on other container types."
@@ -6570,7 +6570,7 @@ msgstr "Синтаксис `..` называется [синтаксисом о�
 
 #: src/std-traits/exercise.md
 msgid "In this example, you will implement the classic [\"ROT13\" cipher](https://en.wikipedia.org/wiki/ROT13). Copy this code to the playground, and implement the missing bits. Only rotate ASCII alphabetic characters, to ensure the result is still valid UTF-8."
-msgstr "В этом примере вы реализуете классический [шифр «ROT13»](https://en.wikipedia.org/wiki/ROT13). Скопируйте код в playground и реализуйте недостающие части. Поворачивайте только буквы ASCII, чтобы результат оставался корректным UTF-8."
+msgstr "В этом упражнении вы реализуете классический [шифр «ROT13»](https://en.wikipedia.org/wiki/ROT13). Скопируйте код в playground и реализуйте недостающие части. Поворачивайте только буквы ASCII, чтобы результат оставался корректным UTF-8."
 
 #: src/std-traits/exercise.md
 msgid "// Implement the `Read` trait for `RotDecoder`.\n"
@@ -6682,7 +6682,7 @@ msgstr "Если студенты спросят, можно упомянуть,
 
 #: src/memory-management/review.md
 msgid "We can inspect the memory layout with `unsafe` Rust. However, you should point out that this is rightfully unsafe!"
-msgstr "Можно исследовать раскладку памяти с помощью `unsafe` Rust. Однако стоит подчеркнуть, что это справедливо небезопасно!"
+msgstr "Можно исследовать раскладку памяти с помощью `unsafe` Rust. Однако стоит подчеркнуть, что это действительно небезопасно!"
 
 #: src/memory-management/review.md src/testing/unit-tests.md
 msgid "' '"
@@ -6756,7 +6756,7 @@ msgstr "Этот слайд призван помочь студентам, пр
 
 #: src/memory-management/approaches.md
 msgid "C must manage heap manually with `malloc` and `free`. Common errors include forgetting to call `free`, calling it multiple times for the same pointer, or dereferencing a pointer after the memory it points to has been freed."
-msgstr "C должен управлять кучей вручную с помощью `malloc` и `free`. Распространённые ошибки включают забывание вызвать `free`, вызов его несколько раз для одного указателя или разыменование указателя после того, как память, на которую он указывает, уже освобождена."
+msgstr "В C кучей нужно управлять вручную с помощью `malloc` и `free`. Распространённые ошибки включают забывание вызвать `free`, вызов его несколько раз для одного указателя или разыменование указателя после того, как память, на которую он указывает, уже освобождена."
 
 #: src/memory-management/approaches.md
 msgid "C++ has tools like smart pointers (`unique_ptr`, `shared_ptr`) that take advantage of language guarantees about calling destructors to ensure memory is freed when a function returns. It is still quite easy to misuse these tools and create similar bugs to C."
@@ -7552,7 +7552,7 @@ msgstr "Можно иметь ровно одну эксклюзивную сс�
 
 #: src/borrowing/borrowck.md
 msgid "The \"outlives\" rule was demonstrated previously when we first looked at references. We review it here to show students that the borrow checking is following a few different rules to validate borrowing."
-msgstr "Правило «пережить» мы уже демонстрировали, когда впервые рассматривали ссылки. Здесь мы повторяем его, чтобы показать студентам, что проверка заимствований следует нескольким разным правилам."
+msgstr "Правило «пережить» мы уже демонстрировали, когда впервые рассматривали ссылки. Здесь мы повторяем его, чтобы показать студентам, что анализатор заимствований следует нескольким разным правилам."
 
 #: src/borrowing/borrowck.md
 msgid "The above code does not compile because `a` is borrowed as mutable (through `c`) and as immutable (through `b`) at the same time."
@@ -7722,7 +7722,7 @@ msgstr "// Не срабатывает (не найдено)\n"
 
 #: src/borrowing/exercise.md
 msgid "The goal of this exercise is to practice the core concepts of ownership and borrowing, specifically the rule that you cannot mutate a collection while holding a reference to one of its elements."
-msgstr "Цель этого упражнения --- попрактиковать базовые концепции владения и заимствования, в частности правило, что нельзя изменять коллекцию, удерживая ссылку на один из её элементов."
+msgstr "Цель этого упражнения --- отработать базовые концепции владения и заимствования, в частности правило, что нельзя изменять коллекцию, удерживая ссылку на один из её элементов."
 
 #: src/borrowing/exercise.md
 msgid "`add_spell` should take ownership of a `Spell` and move it into the `Wizard`'s inventory."
@@ -7778,7 +7778,7 @@ msgstr "Заимствование в функциях"
 
 #: src/lifetimes/simple-borrows.md
 msgid "As part of borrow checking, the compiler needs to reason about how borrows flow into and out of functions. In the simplest case borrows last for the duration of the function call:"
-msgstr "В рамках проверки заимствований компилятору нужно понимать, как заимствования передаются в функции и из них. В простейшем случае заимствования существуют в течение вызова функции:"
+msgstr "При анализе заимствований компилятору нужно понимать, как заимствования передаются в функции и из них. В простейшем случае заимствования существуют в течение вызова функции:"
 
 #: src/lifetimes/simple-borrows.md
 msgid "// Borrow `val` for the function call.\n"
@@ -7806,7 +7806,7 @@ msgstr "Функции Rust могут возвращать ссылки, то �
 
 #: src/lifetimes/returning-borrows.md
 msgid "If a function returns a reference (or another kind of borrow), it was likely derived from one of its arguments. This means that the return value of the function will extend the borrow for one or more argument borrows."
-msgstr "Если функция возвращает ссылку (или другой вид заимствования), она, скорее всего, выведена из одного из аргументов. Это значит, что возвращаемое значение функции продлит заимствование одного или нескольких аргументов."
+msgstr "Если функция возвращает ссылку (или другой вид заимствования), она, скорее всего, получена из одного из аргументов. Это значит, что возвращаемое значение функции продлит заимствование одного или нескольких аргументов."
 
 #: src/lifetimes/returning-borrows.md
 msgid "This case is still fairly simple, in that only one borrow is passed into the function, so the returned borrow has to be the same one."
@@ -8790,7 +8790,7 @@ msgstr "Перечисления не поддерживают приватно�
 
 #: src/modules/encapsulation.md
 msgid "If students want more information about privacy (or lack thereof) in enums, you can bring up `#[doc_hidden]` and `#[non_exhaustive]` and show how they're used to limit what can be done with an enum."
-msgstr "Если студенты хотят узнать больше о приватности (или её отсутствии) в перечислениях, можно упомянуть `#[doc_hidden]` и `#[non_exhaustive]` и показать, как их используют, чтобы ограничить то, что можно делать с перечислением."
+msgstr "Если студенты хотят узнать больше о приватности (или её отсутствии) в перечислениях, можно упомянуть `#[doc(hidden)]` и `#[non_exhaustive]` и показать, как их используют, чтобы ограничить то, что можно делать с перечислением."
 
 #: src/modules/encapsulation.md
 msgid "Module privacy still applies when there are `impl` blocks in other modules [(example in the playground)](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024&gist=3e61f43c88de12bcdf69c1d6df9ab3da)."
@@ -9028,7 +9028,7 @@ msgstr "Привет, мир!"
 
 #: src/testing/unit-tests.md
 msgid "This lets you unit test private helpers."
-msgstr "Это позволяет тестировать модулем приватные вспомогательные функции."
+msgstr "Это позволяет модульно тестировать приватные вспомогательные функции."
 
 #: src/testing/unit-tests.md
 msgid "The `#[cfg(test)]` attribute is only active when you run `cargo test`."
@@ -9118,7 +9118,7 @@ msgstr "[Алгоритм Луна](https://en.wikipedia.org/wiki/Luhn_algorithm
 
 #: src/testing/exercise.md
 msgid "Ignore all spaces. Reject numbers with fewer than two digits. Reject letters and other non-digit characters."
-msgstr "Игнорируйте все пробелы. Отвергайте числа с менее чем двумя цифрами. Отвергайте буквы и другие нецифровые символы."
+msgstr "Игнорируйте все пробелы. Отвергайте числа, в которых меньше двух цифр. Отвергайте буквы и другие нецифровые символы."
 
 #: src/testing/exercise.md
 msgid "Moving from **right to left**, double every second digit: for the number `1234`, we double `3` and `1`. For the number `98765`, we double `6` and `8`."
@@ -9542,7 +9542,7 @@ msgstr "`anyhow::Context` --- трейт, реализованный для ст
 
 #: src/error-handling/anyhow.md
 msgid "`anyhow::Error` has support for downcasting, much like `std::any::Any`; the specific error type stored inside can be extracted for examination if desired with [`Error::downcast`](https://docs.rs/anyhow/latest/anyhow/struct.Error.html#method.downcast)."
-msgstr "`anyhow::Error` поддерживает даункастинг, похожий на `std::any::Any`: при желании можно извлечь конкретный тип ошибки, хранящийся внутри, для проверки с помощью [`Error::downcast`](https://docs.rs/anyhow/latest/anyhow/struct.Error.html#method.downcast)."
+msgstr "`anyhow::Error` поддерживает приведение к конкретному типу (downcast), как `std::any::Any`: при желании можно извлечь конкретный тип ошибки, хранящийся внутри, для проверки с помощью [`Error::downcast`](https://docs.rs/anyhow/latest/anyhow/struct.Error.html#method.downcast)."
 
 #: src/error-handling/exercise.md
 msgid "In this exercise we're revisiting the expression evaluator exercise that we did in day 2. Our initial solution ignores a possible error case: Dividing by zero! Rewrite `eval` to instead use idiomatic error handling to handle this error case and return an error when it occurs. We provide a simple `DivideByZeroError` type to use as the error type for `eval`."
@@ -10337,7 +10337,7 @@ msgstr "Код на следующих страницах можно найти 
 
 #: src/android/setup.md
 msgid "Cuttlefish is a reference Android device designed to work on generic Linux desktops. MacOS support is also planned."
-msgstr "Cuttlefish --- эталонное устройство Android, рассчитанное на работу в обычных Linux-рабочих станциях. Поддержка macOS также планируется."
+msgstr "Cuttlefish --- эталонное устройство Android, рассчитанное на работу на обычных рабочих станциях с Linux. Поддержка macOS также планируется."
 
 #: src/android/setup.md
 msgid "The Cuttlefish system image maintains high fidelity to real devices, and is the ideal emulator to run many Rust use cases."
@@ -10393,7 +10393,7 @@ msgstr "`rust_test`"
 
 #: src/android/build-rules.md
 msgid "Produces a Rust test binary that uses the standard Rust test harness."
-msgstr "Создаёт бинарный файл тестов Rust, который использует стандартный харнесс тестов Rust."
+msgstr "Создаёт бинарный файл тестов Rust, который использует стандартную тестовую обвязку (test harness) Rust."
 
 #: src/android/build-rules.md
 msgid "`rust_fuzz`"
@@ -10527,7 +10527,7 @@ msgstr "`libgreeting`, которую мы определим ниже,"
 
 #: src/android/build-rules/library.md
 msgid "`libtextwrap`, which is a crate already vendored in [`external/rust/android-crates-io/crates/`](https://cs.android.com/android/platform/superproject/main/+/main:external/rust/android-crates-io/crates/)."
-msgstr "`libtextwrap`, которая уже вендорена как крейт в [`external/rust/android-crates-io/crates/`](https://cs.android.com/android/platform/superproject/main/+/main:external/rust/android-crates-io/crates/)."
+msgstr "`libtextwrap`, которая уже включена в дерево исходников как крейт в [`external/rust/android-crates-io/crates/`](https://cs.android.com/android/platform/superproject/main/+/main:external/rust/android-crates-io/crates/)."
 
 #: src/android/build-rules/library.md
 msgid "\"hello_rust_with_dep\""
@@ -11539,7 +11539,7 @@ msgstr "Мы уже видели это в [упражнении «Безопа�
 
 #: src/android/interoperability/with-c.md
 msgid "This assumes full knowledge of the target platform. Not recommended for production."
-msgstr "Это предполагает полное знание целевой платформы. Не рекомендуется для производственного кода."
+msgstr "Это предполагает полное знание целевой платформы. Не рекомендуется для рабочего кода."
 
 #: src/android/interoperability/with-c.md
 msgid "We will look at better options next."
@@ -12241,7 +12241,7 @@ msgstr "Добро пожаловать в Rust в Chromium"
 
 #: src/chromium.md
 msgid "Rust is supported for third-party libraries in Chromium, with first-party glue code to connect between Rust and existing Chromium C++ code."
-msgstr "Rust поддерживается для сторонних библиотек в Chromium, а код-клей (glue code) первой стороны связывает Rust с существующим C++-кодом Chromium."
+msgstr "Rust поддерживается для сторонних библиотек в Chromium, а собственный клей-код (glue code) связывает Rust с существующим C++-кодом Chromium."
 
 #: src/chromium.md
 msgid "Today, we'll call into Rust to do something silly with strings. If you've got a corner of the code where you're displaying a UTF-8 string to the user, feel free to follow this recipe in your part of the codebase instead of the exact part we talk about."
@@ -12655,7 +12655,7 @@ msgstr "Откройте `components/qr_code_generator/qr_code_generator_ffi_glu
 
 #: src/chromium/build-rules/vscode.md
 msgid "Place the cursor over the `QrCode::new` call (around line 26) in \\`qr_code_generator_ffi_glue.rs"
-msgstr "Поставьте курсор на вызов `QrCode::new` (примерно в строке 26) в \\`qr_code_generator_ffi_glue.rs"
+msgstr "Поставьте курсор на вызов `QrCode::new` (примерно в строке 26) в `qr_code_generator_ffi_glue.rs`"
 
 #: src/chromium/build-rules/vscode.md
 msgid "Demo **show documentation** (typical bindings: vscode = ctrl k i; vim/CoC = K)."
@@ -12699,7 +12699,7 @@ msgstr "Добавьте эту новую цель Rust как зависимо
 
 #: src/exercises/chromium/build-rules.md
 msgid "Call this function from somewhere in `ui/base/resource/resource_bundle.cc` - we suggest the top of `ResourceBundle::MaybeMangleLocalizedString`. Build and run Chromium, and ensure that \"Hello from Rust!\" is printed lots of times."
-msgstr "Вызовите эту функцию откуда-нибудь из `ui/base/resource/resource_bundle.cc` --- предлагаем начало `ResourceBundle::MaybeMangleLocalizedString`. Соберите и запустите Chromium и убедитесь, что \"Hello from Rust!\" выводится много раз."
+msgstr "Вызовите эту функцию откуда-нибудь из `ui/base/resource/resource_bundle.cc` --- предлагаем начало `ResourceBundle::MaybeMangleLocalizedString`. Соберите и запустите Chromium и убедитесь, что «Hello from Rust!» выводится много раз."
 
 #: src/exercises/chromium/build-rules.md
 msgid "If you use VSCode, now set up Rust to work well in VSCode. It will be useful in subsequent exercises. If you've succeeded, you will be able to use right-click \"Go to definition\" on `println!`."
@@ -13708,7 +13708,7 @@ msgstr "**Важно:** нужно использовать `git add -f`, ина
 
 #: src/chromium/adding-third-party-crates/checking-in.md
 msgid "As you do so, you might find presubmit checks fail because of non-inclusive language. This is because Rust crate data tends to include names of git branches, and many projects still use non-inclusive terminology there. So you may need to run:"
-msgstr "При этом могут сработать предварительные проверки (presubmit) из-за не-инклюзивного языка. Дело в том, что данные крейтов Rust часто содержат имена git-веток, а во многих проектах там до сих пор используется не-инклюзивная терминология. Поэтому может понадобиться выполнить:"
+msgstr "При этом могут сработать предварительные проверки (presubmit) из-за неинклюзивной лексики. Дело в том, что данные крейтов Rust часто содержат имена git-веток, а во многих проектах там до сих пор используется неинклюзивная терминология. Поэтому может понадобиться выполнить:"
 
 #: src/chromium/adding-third-party-crates/keeping-up-to-date.md
 msgid "As the OWNER of any third party Chromium dependency, you are [expected to keep it up to date with any security fixes](https://chromium.googlesource.com/chromium/src/+/main/docs/adding_to_third_party.md#add-owners). It is hoped that we will soon automate this for Rust crates, but for now, it's still your responsibility just as it is for any other third party dependency."
@@ -14196,7 +14196,7 @@ msgstr "// pin_input.is_high(); // Ошибка, значение перемещ
 
 #: src/bare-metal/microcontrollers/type-state.md
 msgid "Pins don't implement `Copy` or `Clone`, so only one instance of each can exist. Once a pin is moved out of the port struct, nobody else can take it."
-msgstr "Выводы не реализуют `Copy` или `Clone`, поэтому каждый экземпляр может существовать только в одном экземпляре. Как только вывод перемещён из структуры порта, никто другой не может его забрать."
+msgstr "Выводы не реализуют `Copy` или `Clone`, поэтому каждый вывод может существовать только в единственном экземпляре. Как только вывод перемещён из структуры порта, никто другой не может его забрать."
 
 #: src/bare-metal/microcontrollers/type-state.md
 msgid "Changing the configuration of a pin consumes the old pin instance, so you can't use the old instance afterwards."
@@ -15564,7 +15564,7 @@ msgstr "Инициализация, драйвер UART, простой загр
 
 #: src/bare-metal/aps/other-projects.md
 msgid "Some caveats around cache maintenance and initialization in Rust, not necessarily a good example to copy for production code."
-msgstr "Некоторые оговорки относительно обслуживания кэша и инициализации в Rust; это не обязательно хороший пример для копирования в производственный код."
+msgstr "Некоторые оговорки относительно обслуживания кэша и инициализации в Rust; это не обязательно хороший пример для копирования в рабочий код."
 
 #: src/bare-metal/aps/other-projects.md
 msgid "[`cargo-call-stack`](https://crates.io/crates/cargo-call-stack)"
@@ -17031,7 +17031,7 @@ msgstr "Крейт [Flume](https://docs.rs/flume/latest/flume/) содержит
 
 #: src/concurrency/async-control-flow/channels.md
 msgid "What makes working with `async` channels preferable is the ability to combine them with other `future`s to combine them and create complex control flow."
-msgstr "Работа с асинхронными каналами удобнее благодаря возможности комбинировать их с другими `future`, чтобы создавать сложный поток управления."
+msgstr "Работа с асинхронными каналами удобнее благодаря возможности комбинировать их с другими фьючерсами, чтобы создавать сложный поток управления."
 
 #: src/concurrency/async-control-flow/join.md
 msgid "A join operation waits until all of a set of futures are ready, and returns a collection of their results. This is similar to `Promise.all` in JavaScript or `asyncio.gather` in Python."
@@ -17639,7 +17639,7 @@ msgstr "Сделайте ваш API предсказуемым"
 
 #: src/idiomatic/welcome.md
 msgid "Follow naming conventions (case conventions, prefer vocabulary precedented in the standard library - e.g., methods should be called \"push\" not \"push_back\", \"is_empty\" not \"empty\" etc.)"
-msgstr "Следуйте соглашениям об именовании (регистр и привычная лексика стандартной библиотеки: например, методы должны называться \"push\", а не \"push_back\", \"is_empty\", а не \"empty\" и т. д.)"
+msgstr "Следуйте соглашениям об именовании (регистр и привычная лексика стандартной библиотеки: например, методы должны называться «push», а не «push_back», «is_empty», а не «empty» и т. д.)"
 
 #: src/idiomatic/welcome.md
 msgid "Know the vocabulary types and traits in the standard library, and use them in your APIs. If something feels like a basic type/algorithm, check in the standard library first."
@@ -17959,7 +17959,7 @@ msgstr "Вы, возможно, видели подробную документ
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "Fundamental library code often has elaborate documentation, for example, the standard library, highly reusable frameworks like Serde and Tokio. Teams responsible for this code often have appropriate resources to write and maintain elaborate documentation."
-msgstr "Фундаментальный библиотечный код часто имеет подробную документацию, например стандартная библиотека и высокоповторно используемые фреймворки вроде Serde и Tokio. Команды, отвечающие за такой код, обычно имеют ресурсы, чтобы писать и поддерживать подробную документацию."
+msgstr "Фундаментальный библиотечный код часто имеет подробную документацию, например стандартная библиотека и многократно переиспользуемые фреймворки вроде Serde и Tokio. Команды, отвечающие за такой код, обычно имеют ресурсы, чтобы писать и поддерживать подробную документацию."
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/library-vs-application-docs.md
 msgid "Library code is often stable, so the community is going to extract a significant benefit from elaborate documentation before it needs to be reworked."
@@ -18163,7 +18163,7 @@ msgstr "Называйте ключевые слова ближе к начал�
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid "This aids skimming and scanning, as the first few words of a paragraph stand out the most."
-msgstr "Это помогает при бегло просмотре, так как первые несколько слов абзаца выделяются больше всего."
+msgstr "Это помогает при беглом просмотре, так как первые несколько слов абзаца выделяются больше всего."
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/name-drop-signpost.md
 msgid "Skimming and scanning lets users quickly navigate a text, keeping keywords as close to the beginning of a paragraph as possible lets a user determine if they've found relevant information faster."
@@ -18335,7 +18335,7 @@ msgid ""
 "/// Returns a future that resolves when operation completes.  \n"
 msgstr ""
 "// плохо\n"
-"/// Возвращает future, который завершается при завершении операции.  \n"
+"/// Возвращает фьючерс, который завершается при завершении операции.  \n"
 
 #: src/idiomatic/foundations-api-design/meaningful-doc-comments/what-isnt-docs.md
 msgid ""
@@ -19119,7 +19119,7 @@ msgstr "Это не значит, что равенство вызовет па�
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid "For example, with floating point values `NaN` is an outlier: `NaN == NaN` is false, despite bitwise equality."
-msgstr "Например, для значений с плавающей запятой `NaN` --- выброс: `NaN == NaN` ложно, несмотря на побитовое равенство."
+msgstr "Например, для значений с плавающей запятой `NaN` --- исключение: `NaN == NaN` ложно, несмотря на побитовое равенство."
 
 #: src/idiomatic/foundations-api-design/predictable-api/common-traits/partialeq-eq.md
 msgid "`PartialEq` exists to separate types like `f32`/`f64` from types with Total Equality."
@@ -19795,7 +19795,7 @@ msgstr "Пример выше показывает упрощённый `Mutex` 
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid "Even though it is not a production-ready implementation, it illustrates the core idea:"
-msgstr "Хотя это не готовая к производству реализация, она иллюстрирует основную идею:"
+msgstr "Хотя это не промышленная реализация, она иллюстрирует основную идею:"
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid "the guard represents exclusive access,"
@@ -19831,7 +19831,7 @@ msgstr "Полностью блокирующий метод `.lock()` и неб
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_guards.md
 msgid "You can explore the [`Mutex` implementation in Rust’s std library](https://doc.rust-lang.org/std/sync/struct.Mutex.html) as an example of a production-ready mutex. The [`Mutex` from the `parking_lot` crate](https://docs.rs/parking_lot/latest/parking_lot/type.Mutex.html) is another worthwhile reference."
-msgstr "Можно изучить [реализацию `Mutex` в стандартной библиотеке Rust](https://doc.rust-lang.org/std/sync/struct.Mutex.html) как пример готового к производству мьютекса. Ещё один полезный источник --- [`Mutex` из крейта `parking_lot`](https://docs.rs/parking_lot/latest/parking_lot/type.Mutex.html)."
+msgstr "Можно изучить [реализацию `Mutex` в стандартной библиотеке Rust](https://doc.rust-lang.org/std/sync/struct.Mutex.html) как пример промышленной реализации мьютекса. Ещё один полезный источник --- [`Mutex` из крейта `parking_lot`](https://docs.rs/parking_lot/latest/parking_lot/type.Mutex.html)."
 
 #: src/idiomatic/leveraging-the-type-system/raii/drop_bomb.md
 msgid "Drop Bombs: Enforcing API Correctness"
@@ -23468,10 +23468,10 @@ msgid ""
 "```"
 msgstr ""
 "```console\n"
-"$ git clone --depth=1 https://github.com/r007/EmbeddedRust-Rus/tree/main/comprehensive-rust\n"
-"Cloning into 'comprehensive-rust'...\n"
+"$ git clone --depth=1 https://github.com/r007/EmbeddedRust-Rus.git\n"
+"Cloning into 'EmbeddedRust-Rus'...\n"
 "...\n"
-"$ cd comprehensive-rust\n"
+"$ cd EmbeddedRust-Rus/comprehensive-rust\n"
 "$ cargo install-tools\n"
 "...\n"
 "$ cargo serve # затем откройте http://127.0.0.1:3000/ в браузере\n"
@@ -24825,7 +24825,7 @@ msgstr "Нужны исправления в `main`."
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "`a` does not satisfy one of the preconditions of `copy` (source\\` data ends with a null byte within its memory allocation)"
-msgstr "`a` не удовлетворяет одному из предусловий `copy` (данные source\\` должны заканчиваться нулевым байтом внутри своего выделения памяти)"
+msgstr "`a` не удовлетворяет одному из предусловий `copy` (данные `source` должны заканчиваться нулевым байтом внутри своего выделения памяти)"
 
 #: src/unsafe-deep-dive/rules-of-the-game/copying-memory/documented-safety-preconditions.md
 msgid "SAFETY comment needed"
@@ -25121,7 +25121,7 @@ msgstr "Вопрос: «Хотя память была записана, тип 
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/zeroed-method.md
 msgid "A: Some types require their values to be non-zero or non-null. The classic case is references, but this applies to many other types as well. Consider the `NonZeroUsize` integer type and others in its family."
-msgstr "Ответ: некоторым типам их значения должны быть ненулевыми или не-null. Классический случай — ссылки, но это относится и ко многим другим типам. Вспомните целочисленный тип `NonZeroUsize` и другие типы этого семейства."
+msgstr "Ответ: значения некоторых типов не могут быть нулевыми (null). Классический случай — ссылки, но это относится и ко многим другим типам. Вспомните целочисленный тип `NonZeroUsize` и другие типы этого семейства."
 
 #: src/unsafe-deep-dive/initialization/maybeuninit/write-vs-assignment.md
 msgid "MaybeUninit.write() vs assignment"
@@ -25513,7 +25513,7 @@ msgstr "Спросите: какие типы могут быть `!Unpin`?"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "Compiler-generated futures"
-msgstr "Футуры, сгенерированные компилятором"
+msgstr "Фьючерсы, сгенерированные компилятором"
 
 #: src/unsafe-deep-dive/pinning/unpin-trait.md
 msgid "Types containing a `PhantomPinned` field"
@@ -25657,7 +25657,7 @@ msgstr ""
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-offset.md
 msgid "With Offset"
-msgstr "С смещением (Offset)"
+msgstr "Со смещением (Offset)"
 
 #: src/unsafe-deep-dive/pinning/self-referential-buffer/rust-offset.md
 msgid "In Rust, it's more idiomatic to use an offset variable and to create references on-demand."
@@ -26828,7 +26828,7 @@ msgid ""
 "receiver:  \n"
 "The first parameter in a Rust [method](methods-and-traits/methods.md) that represents the instance on which the method is called."
 msgstr ""
-"приёмник:\n"
+"получатель:\n"
 "Первый параметр [метода](methods-and-traits/methods.md) в Rust, который представляет экземпляр, для которого вызван метод."
 
 #: src/glossary.md
@@ -26917,7 +26917,7 @@ msgid ""
 "A function that tests the correctness of other code. Rust has a built-in test runner. See [Testing](testing.md)."
 msgstr ""
 "тест:\n"
-"Функция, которая проверяет корректность другого кода. В Rust есть встроенный запускатель тестов. См. [Тестирование](testing.md)."
+"Функция, которая проверяет корректность другого кода. В Rust есть встроенное средство запуска тестов. См. [Тестирование](testing.md)."
 
 #: src/glossary.md
 msgid ""
@@ -27105,7 +27105,7 @@ msgstr "[Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-m
 
 #: src/other-resources.md
 msgid "[Advanced testing for Rust applications](https://rust-exercises.com/advanced-testing/): a self-paced workshop that goes beyond Rust's built-in testing framework. It covers `googletest`, snapshot testing, mocking as well as how to write your own custom test harness."
-msgstr "[Advanced testing for Rust applications](https://rust-exercises.com/advanced-testing/): самостоятельный практикум, выходящий за рамки встроенного фреймворка тестирования Rust. Рассматриваются `googletest`, снапшот-тестирование, моки, а также написание собственного тестового харнесса."
+msgstr "[Advanced testing for Rust applications](https://rust-exercises.com/advanced-testing/): самостоятельный практикум, выходящий за рамки встроенного фреймворка тестирования Rust. Рассматриваются `googletest`, снапшот-тестирование, моки, а также написание собственной тестовой обвязки (test harness)."
 
 #: src/other-resources.md
 msgid "[Beginner's Series to Rust](https://docs.microsoft.com/en-us/shows/beginners-series-to-rust/) and [Take your first steps with Rust](https://docs.microsoft.com/en-us/learn/paths/rust-first-steps/): two Rust guides aimed at new developers. The first is a set of 35 videos and the second is a set of 11 modules which covers Rust syntax and basic constructs."

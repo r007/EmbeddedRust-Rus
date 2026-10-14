@@ -82,7 +82,7 @@ $ echo $?
 
 Ещё один совет: можно настроить поведение при панике так, чтобы оно вызывало `exit(EXIT_FAILURE)`. Это позволит писать `no_std`-тесты, которые проходят выполнение (run-pass), и запускать их на QEMU.
 
-Для удобства крейт `panic-semihosting` имеет функцию «exit», которая при включении вызывает `exit(EXIT_FAILURE)` после вывода сообщения о панике в stderr хоста.
+Для удобства у крейта `panic-semihosting` есть feature «exit», который при включении вызывает `exit(EXIT_FAILURE)` после вывода сообщения о панике в stderr хоста.
 
 ```rust,ignore
 #![no_main]
@@ -114,13 +114,13 @@ $ echo $?
 1
 ```
 
-**ПРИМЕЧАНИЕ**: чтобы включить эту функцию в `panic-semihosting`, отредактируйте раздел dependencies в вашем `Cargo.toml`, где указан `panic-semihosting`, следующим образом:
+**ПРИМЕЧАНИЕ**: чтобы включить этот feature в `panic-semihosting`, отредактируйте раздел dependencies в вашем `Cargo.toml`, где указан `panic-semihosting`, следующим образом:
 
 ``` toml
 panic-semihosting = { version = "VERSION", features = ["exit"] }
 ```
 
-где `VERSION` — нужная версия. Подробнее о функциях зависимостей см. раздел [`specifying dependencies`] в книге Cargo.
+где `VERSION` — нужная версия. Подробнее о feature-флагах зависимостей см. раздел [`specifying dependencies`] в книге Cargo.
 
 [`specifying dependencies`]:
 https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html

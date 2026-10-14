@@ -29,7 +29,7 @@ $ sudo pacman -S arm-none-eabi-gdb minicom libunwind
 
 > **ПРИМЕЧАНИЕ** `arm-none-eabi-gdb` — это команда GDB, которой вы будете отлаживать программы для Arm Cortex-M.
 
-Если для вашего дистрибутива нет пакетов [готового набора инструментов Arm](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads), скачайте файл «Linux 64-bit» и добавьте его каталог `bin` в `PATH`. Вот один из способов:
+Если для вашего дистрибутива нет пакетов [готового тулчейна Arm](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads), скачайте файл «Linux 64-bit» и добавьте его каталог `bin` в `PATH`. Вот один из способов:
 
 ``` console
 $ mkdir -p ~/local

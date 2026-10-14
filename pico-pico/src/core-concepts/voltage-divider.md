@@ -29,7 +29,7 @@ V_{out} = V_{in} \times \frac{R_2}{R_1 + R_2}
 V_{out} = 3.3 V \times \frac{10 k\Omega}{10 k\Omega + 10 k\Omega} = 3.3 V \times \frac{10}{20} = 3.3 V \times 0.5 = 1.65 V
 \\]
 
-Выходное напряжение \\( V_{out} \\) равно 1.65 В.
+Выходное напряжение \\( V_{out} \\) равно 1,65 В.
 
 ```rust,editable
 fn main() {

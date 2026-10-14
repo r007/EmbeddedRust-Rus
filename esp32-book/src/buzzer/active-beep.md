@@ -23,7 +23,7 @@ esp-generate --chip esp32 active-buzzer
 
 ## Код
 
-Мы настроим GPIO 33 как выходной вывод с начальным состоянием Low. К этому выводу подключён положительный контакт пищалки.
+Мы настроим GPIO 33 как выходной вывод с начальным состоянием Low. К этому выводу подключён положительный вывод пищалки.
 
 ```rust
 let mut buzzer = Output::new(peripherals.GPIO33, Level::Low, OutputConfig::default());

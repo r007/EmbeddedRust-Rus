@@ -1,4 +1,4 @@
-{{#title Generate Custom LCD Characters for HD44780 Displays}}
+{{#title Генератор пользовательских символов для ЖК-дисплеев HD44780}}
 
 # Генератор пользовательских символов LCD (сетка 5x8)
 

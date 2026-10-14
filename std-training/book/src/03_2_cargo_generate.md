@@ -39,7 +39,7 @@ cargo generate esp-rs/esp-idf-template cargo
 🔎 `.cargo/config.toml` содержит локальные настройки ([список всех настроек](https://doc.rust-lang.org/cargo/reference/config.html)) для вашего пакета.
 `Cargo.toml` содержит зависимости, а `Cargo.lock` [фиксирует все ваши зависимости](https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html).
 
-Необязательно, но рекомендуется: чтобы сэкономить место на диске и время загрузки, задайте [общий каталог инструментария](https://github.com/esp-rs/esp-idf-sys/blob/master/BUILD-OPTIONS.md#esp_idf_tools_install_dir-esp_idf_tools_install_dir). Иначе каждый новый проект или рабочее пространство получит собственную копию инструментария на вашем компьютере:
+Необязательно, но рекомендуется: чтобы сэкономить место на диске и время загрузки, задайте [общий каталог инструментов](https://github.com/esp-rs/esp-idf-sys/blob/master/BUILD-OPTIONS.md#esp_idf_tools_install_dir-esp_idf_tools_install_dir). Иначе каждый новый проект или рабочее пространство получит собственную копию этих инструментов на вашем компьютере:
 
 
 ✅ Откройте `hello-world/.cargo/config.toml` и добавьте следующую строку в конец секции `[env]`. Остальное не меняйте.

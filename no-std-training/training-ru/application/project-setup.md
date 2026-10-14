@@ -47,7 +47,7 @@ no_std-training/
   - Переданы флаги компилятора Rust, которые принудительно включают frame pointers. Это необходимо для корректной работы бэктрейсов. Если вы не используете крейт `esp-backtrace`, это не требуется.
   - Кроме того, мы настраиваем [espflash] как раннер Cargo для проекта.
 - [`.clippy.toml`] содержит конфигурацию [Clippy], линтера для кода на Rust.
-- [`build.rs`] настраивает компилятор Rust так, чтобы подключались необходимые линкерные скрипты.
+- [`build.rs`] настраивает компилятор Rust так, чтобы подключались необходимые скрипты компоновщика.
   - Это можно было бы задать и в `.cargo/config.toml`, но такой подход даёт более понятные диагностические сообщения при ошибках сборки.
 - `Cargo.toml` — [манифест Cargo][Cargo manifest], в котором хранятся метаданные проекта, зависимости и другая информация.
 - [`rust-toolchain.toml`] задаёт, какой тулчейн Rust использовать, а также указывает нужные компоненты и целевую платформу.
@@ -109,8 +109,8 @@ fn panic(_: &core::panic::PanicInfo) -> ! {
     loop {}
 }
 
-// This creates a default app-descriptor required by the ESP-IDF bootloader.
-// For more information see: <https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-reference/system/app_image_format.html#application-description>
+// Создаёт дескриптор приложения по умолчанию, который требуется загрузчику ESP-IDF.
+// Подробнее см.: <https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-reference/system/app_image_format.html#application-description>
 esp_bootloader_esp_idf::esp_app_desc!();
 
 #[allow(
@@ -128,14 +128,14 @@ async fn main(spawner: Spawner) -> ! {
         esp_hal::interrupt::software::SoftwareInterruptControl::new(peripherals.SW_INTERRUPT);
     esp_rtos::start(timg0.timer0, sw_interrupt.software_interrupt0);
 
-    // TODO: Spawn some tasks
+    // TODO: запустить задачи
     let _ = spawner;
 
     loop {
         Timer::after(Duration::from_secs(1)).await;
     }
 
-    // for inspiration have a look at the examples at https://github.com/esp-rs/esp-hal/tree/main/examples
+    // для вдохновения посмотрите примеры по адресу https://github.com/esp-rs/esp-hal/tree/main/examples
 }
 ```
 
