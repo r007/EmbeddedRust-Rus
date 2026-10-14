@@ -82,10 +82,10 @@ Timer::after(Duration::from_secs(5)).await;
 
 ## Вывод текста
 
-Теперь наконец выведем текст «impl Rust for ESP32» на экран в позицию (x=3, y=100). После этого обновим и перерисуем дисплей, чтобы показать текст. Также добавляем короткую задержку, чтобы изменения успели примениться.
+Теперь наконец выведем текст «impl Rust для ESP32» на экран в позицию (x=3, y=100). После этого обновим и перерисуем дисплей, чтобы показать текст. Также добавляем короткую задержку, чтобы изменения успели примениться.
 
 ```rust
-draw_text(&mut display, "impl Rust for ESP32", 3, 100);
+draw_text(&mut display, "impl Rust для ESP32", 3, 100);
 epd.update_and_display_frame(&mut spi_dev, display.buffer(), &mut Delay)
     .unwrap();
 Timer::after(Duration::from_secs(5)).await;
@@ -213,7 +213,7 @@ async fn main(spawner: Spawner) -> ! {
         .unwrap();
     Timer::after(Duration::from_secs(5)).await;
 
-    draw_text(&mut display, "impl Rust for ESP32", 3, 100);
+    draw_text(&mut display, "impl Rust для ESP32", 3, 100);
     epd.update_and_display_frame(&mut spi_dev, display.buffer(), &mut Delay)
         .unwrap();
     Timer::after(Duration::from_secs(5)).await;

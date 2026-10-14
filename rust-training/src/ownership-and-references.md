@@ -6,7 +6,7 @@
 
 *Упражнение адаптировано из [упражнения на семантику перемещения](https://github.com/rust-lang/rustlings/tree/main/exercises/06_move_semantics) проекта Rustlings.*
 
-Находясь в папке `exercises/2-foundations-of-rust/2-ownership-and-references/1-move-semantics`, чтобы начать, выполните:
+Чтобы начать, находясь в папке `exercises/2-foundations-of-rust/2-ownership-and-references/1-move-semantics`, выполните:
 ```bash
 cargo run --bin 01
 ```

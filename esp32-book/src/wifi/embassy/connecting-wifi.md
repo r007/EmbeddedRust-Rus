@@ -21,7 +21,7 @@ macro_rules! mk_static {
 }
 ```
 
-## Initializing the Wi-Fi Controller
+## Инициализация контроллера Wi-Fi
 
 Инициализируем Embassy обычным образом:
 

@@ -62,6 +62,6 @@ fn main() {
 
 **Ресурсы:**
 
-- [Официальная документация Rust, раздел о пределюдиях и no_std](https://doc.rust-lang.org/reference/names/preludes.html#the-no_std-attribute) (на английском языке)
+- [Официальная документация Rust, раздел о прелюдиях и no_std](https://doc.rust-lang.org/reference/names/preludes.html#the-no_std-attribute) (на английском языке)
 - [The Embedded Rust Book](https://docs.rust-embedded.org/book/intro/no-std.html) (на английском языке)
 - [Writing an OS in Rust, раздел об атрибуте no_std](https://os.phil-opp.com/freestanding-rust-binary/#the-no-std-attribute) (на английском языке)

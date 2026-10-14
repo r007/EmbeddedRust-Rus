@@ -27,7 +27,7 @@
   - [Прерывания](./start/interrupts.md)
 - [Периферия](./peripherals/index.md)
     - [Первая попытка на Rust](./peripherals/a-first-attempt.md)
-    - [Проверка заимствований](./peripherals/borrowck.md)
+    - [Анализатор заимствований](./peripherals/borrowck.md)
     - [Синглтоны](./peripherals/singletons.md)
 - [Статические гарантии](./static-guarantees/index.md)
     - [Программирование на typestate](./static-guarantees/typestate-programming.md)

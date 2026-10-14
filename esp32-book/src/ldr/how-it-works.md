@@ -48,7 +48,7 @@ canvas {
 <p class="formula" id="filledFormula">
     Подставленная формула: V<sub>out</sub> = 3.3 × 999 / (10000 + 999)
 </p>
-<p id="result">Выходное напряжение (V<sub>out</sub>): 0.25 V</p>
+<p id="result">Выходное напряжение (V<sub>out</sub>): 0.25 В</p>
 <canvas id="circuitCanvas" width="600" height="400"></canvas>
 
 
@@ -87,7 +87,7 @@ canvas {
             }
             const vout = vin * (r2 / (r1 + r2));
             document.getElementById('result').innerHTML = 
-                `Выходное напряжение (V<sub>out</sub>): ${vout.toFixed(2)} V`;
+                `Выходное напряжение (V<sub>out</sub>): ${vout.toFixed(2)} В`;
         }
         function drawZigZagResistor(ctx, x, y, width, height) {
             const segments = 6;
@@ -140,8 +140,8 @@ canvas {
         }
         function formatResistance(resistance) {
             return resistance >= 1000
-                ? `${(resistance / 1000).toFixed(1)} kΩ`
-                : `${resistance.toFixed(0)} Ω`;
+                ? `${(resistance / 1000).toFixed(1)} кОм`
+                : `${resistance.toFixed(0)} Ом`;
         }
         function drawCircuit() {
             const canvas = document.getElementById('circuitCanvas');
@@ -162,7 +162,7 @@ canvas {
             ctx.fillStyle = 'black';
             ctx.font = '14px Arial';
 
-            ctx.fillText(`V_in: ${vin.toFixed(2)} V`, 38, 96);
+            ctx.fillText(`V_in: ${vin.toFixed(2)} В`, 38, 96);
             ctx.beginPath();
             ctx.moveTo(100, 100);
             ctx.lineTo(150, 100);
@@ -207,7 +207,7 @@ canvas {
             ctx.moveTo(170, 200);
             ctx.lineTo(270, 200);
             ctx.stroke();
-            ctx.fillText(`V_out: ${vout.toFixed(2)} V`, 280, 203);
+            ctx.fillText(`V_out: ${vout.toFixed(2)} В`, 280, 203);
         }
 
         updateAndCalculate();

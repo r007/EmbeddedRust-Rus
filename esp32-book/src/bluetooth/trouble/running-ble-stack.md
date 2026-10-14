@@ -11,7 +11,7 @@
 
 
 ```rust
-/// Run the BLE stack.
+/// Запускает BLE-стек.
 pub async fn run<C>(controller: C)
 where
     C: Controller,

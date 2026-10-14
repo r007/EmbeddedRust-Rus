@@ -4,8 +4,8 @@
 
 Типовой код для подключения Wi-Fi готов. Далее с помощью крейта picoserve настроим маршрут для корневого URL («/»), который будет отдавать нашу HTML-страницу.
 
-## Функция `impl_trait_in_assoc_type`
-Крейту picoserve нужна функция `impl_trait_in_assoc_type`, которая в Rust пока является нестабильной. Чтобы её включить, добавьте следующую строку в начало файла lib.rs (мы уже сделали это):
+## Нестабильная возможность `impl_trait_in_assoc_type`
+Крейту picoserve нужна возможность языка `impl_trait_in_assoc_type`, которая в Rust пока нестабильна. Чтобы её включить, добавьте следующую строку в начало файла lib.rs (мы уже сделали это):
 ```rust
 #![feature(impl_trait_in_assoc_type)]
 ```
@@ -105,8 +105,8 @@ pub async fn web_task(
 ```
 
 
-## Clone the existing project
-You can also clone (or refer) project I created and navigate to the `webserver-html` folder.
+## Клонирование существующего проекта
+Можно клонировать проект, который я создал (или просто посмотреть его), и перейти в папку `webserver-html`.
 
 ```sh
 git clone https://github.com/ImplFerris/esp32-projects

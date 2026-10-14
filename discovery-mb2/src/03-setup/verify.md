@@ -48,7 +48,7 @@ Debugging RISC-V targets over SWD is not supported. For these targets, JTAG is t
 Debugging Xtensa targets over SWD is not supported. For these targets, JTAG is the only supported protocol. Xtensa specific information cannot be printed.
 ```
 
-Затем убедитесь, что вы находитесь в каталоге `src/03-setup` исходного кода книги, и выполните команды:
+Затем убедитесь, что вы находитесь в каталоге `discovery-mb2/src/03-setup` исходного кода книги, и выполните команды:
 
 ```
 $ rustup target add thumbv7em-none-eabihf

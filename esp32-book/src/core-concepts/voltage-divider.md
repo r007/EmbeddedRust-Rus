@@ -28,7 +28,7 @@ V_{out} = 3.3V \times \frac{10 k\Omega}{10 k\Omega + 10 k\Omega} = 3.3V \times \
 \\]
 
 
-Выходное напряжение \\( V_{out} \\) равно 1.65 В.
+Выходное напряжение \\( V_{out} \\) равно 1,65 В.
 
 
 ```rust,editable
@@ -111,7 +111,7 @@ canvas {
 
         const vout = vin * (r2 / (r1 + r2));
         document.getElementById('result').textContent = 
-            `Выходное напряжение (Vout): ${vout.toFixed(2)} V`;
+            `Выходное напряжение (Vout): ${vout.toFixed(2)} В`;
     }
 
     function drawZigZagResistor(ctx, x, y, width, height) {
@@ -167,7 +167,7 @@ canvas {
 
         ctx.fillStyle = 'black';
         ctx.font = '16px Arial';
-        ctx.fillText(`V_in: ${vin.toFixed(2)} V`, 35, 94);
+        ctx.fillText(`V_in: ${vin.toFixed(2)} В`, 35, 94);
         ctx.beginPath();
         ctx.moveTo(100, 100);
         ctx.lineTo(150, 100);
@@ -182,7 +182,7 @@ canvas {
         ctx.lineTo(170, 130);
         ctx.stroke();
 
-        ctx.fillText(`R1: ${r1} Ω`, 200, 155);
+        ctx.fillText(`R1: ${r1} Ом`, 200, 155);
         drawZigZagResistor(ctx, 170, 130, 23, 40);
 
         ctx.beginPath();
@@ -190,7 +190,7 @@ canvas {
         ctx.lineTo(170, 230);
         ctx.stroke();
 
-        ctx.fillText(`R2: ${r2} Ω`, 200, 256);
+        ctx.fillText(`R2: ${r2} Ом`, 200, 256);
         drawZigZagResistor(ctx, 170, 230, 20, 40);
 
         ctx.beginPath();
@@ -205,7 +205,7 @@ canvas {
         ctx.moveTo(170, 200);
         ctx.lineTo(270, 200);
         ctx.stroke();
-        ctx.fillText(`V_out: ${vout.toFixed(2)} V`, 280, 203);
+        ctx.fillText(`V_out: ${vout.toFixed(2)} В`, 280, 203);
     }
 
     updateAndCalculate();

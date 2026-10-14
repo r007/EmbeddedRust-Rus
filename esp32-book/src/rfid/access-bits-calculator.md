@@ -1,4 +1,4 @@
-{{#title MIFARE Classic 1K Access Bits Calculator for ESP32}}
+{{#title Калькулятор битов доступа MIFARE Classic 1K для ESP32}}
 
 # Калькулятор битов доступа MIFARE Classic 1K
 
@@ -387,7 +387,7 @@
     const table = row.closest('table');
     let nestedTable = row.nextElementSibling;
 
-    // Check if nested table already exists, otherwise create a new one
+    // Проверяем, существует ли вложенная таблица, иначе создаём новую
     if (!nestedTable || !nestedTable.classList.contains('nested-table')) {
       nestedTable = document.createElement('tr');
       const td = document.createElement('td');
@@ -396,11 +396,11 @@
       nestedTable.setAttribute('data-parent', rowId); 
       td.innerHTML = document.getElementById(tmplId).innerHTML; 
       nestedTable.appendChild(td);
-       // Insert the nested table below the row
+       // Вставляем вложенную таблицу под строкой
       row.insertAdjacentElement('afterend', nestedTable);
     }
 
-    // Toggle visibility of the nested table
+    // Переключаем видимость вложенной таблицы
     nestedTable.style.display = nestedTable.style.display === 'none' || nestedTable.style.display === '' ? 'table-row' : 'none';
   }
 
@@ -615,7 +615,7 @@
         errorBox.style.display = 'none';
     }
 
-    // Function to determine permissions and acess from the bytes
+    // Функция определения прав и условий доступа по байтам
     function decode() {
         const accessBits = document.getElementById('access-bits').value;
 
@@ -631,19 +631,19 @@
         const byte7 = accessBits.slice(2, 4); // Byte 7
         const byte8 = accessBits.slice(4, 6); // Byte 8
 
-        // Convert the byte strings to integers (assuming hexadecimal)
+        // Преобразуем строки с байтами в целые числа (считаем, что запись шестнадцатеричная)
         const byteArray = [
-            parseInt(byte6, 16), // Convert byte6 to an integer
-            parseInt(byte7, 16), // Convert byte7 to an integer
-            parseInt(byte8, 16)  // Convert byte8 to an integer
+            parseInt(byte6, 16), // Преобразуем byte6 в целое число
+            parseInt(byte7, 16), // Преобразуем byte7 в целое число
+            parseInt(byte8, 16)  // Преобразуем byte8 в целое число
         ];
 
-        // Function to convert a byte to its corresponding bits array
+        // Функция преобразования байта в массив его битов
         const byteToBits = (byte) => {
             return Array.from({ length: 8 }, (_, i) => (byte >> (7 - i)) & 1);
         };
 
-        // Create a dictionary with byte keys and their corresponding bits array
+        // Создаём словарь: ключи — байты, значения — соответствующие массивы битов
         const byteToBitsDict = {
             "byte6": byteToBits(byteArray[0]),
             "byte7": byteToBits(byteArray[1]),
@@ -669,7 +669,7 @@
         };
 
         let ICxy = {
-            // Inverted values
+            // Инвертированные значения
             "IC10": byteToBitsDict.byte6[7],
             "IC20": byteToBitsDict.byte6[3],
             "IC30": byteToBitsDict.byte7[7],
@@ -741,7 +741,7 @@
         stRow.cells[9].textContent = stCols.remarks;
     }
 
-    // convert access and permission to bytes
+    // преобразуем права и условия доступа в байты
     function encode() {
         let byte6 = 0xFF;
         let byte7 = 0x07;
@@ -771,7 +771,7 @@
         };
 
         let ICxy = {
-            // Inverted values
+            // Инвертированные значения
             "IC10": Cxy.C10 ^ 1,
             "IC20": Cxy.C20 ^ 1,
             "IC30": Cxy.C30 ^ 1,

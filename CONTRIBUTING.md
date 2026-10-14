@@ -54,14 +54,19 @@
 | firmware | прошивка | |
 | bootloader | загрузчик | |
 | peripheral | периферия | |
+| pin (физический) | вывод | не «пин» и не «контакт»; тип `Pin` не переводим |
+| toolchain | тулчейн | |
+| borrow checker | анализатор заимствований | |
+| Cargo feature | feature-флаг | |
 | register | регистр | |
 | interrupt | прерывание | |
 | polling | опрос | |
-| linker | линкер | |
-| duty cycle | коэффициент заполнения | для PWM |
+| linker | компоновщик | |
+| duty cycle | коэффициент заполнения | для ШИМ |
 | buzzer | пищалка | |
 | Future, Pin, Mutex, Send, Sync, PhantomData, newtype, typestate, UB | — | оставляем английскими |
-| GPIO, HAL, PAC, BSP, NVIC, SPI, I2C, UART, PWM, ADC, BLE, Wi-Fi | — | оставляем английскими |
+| ADC, DAC, PWM | АЦП, ЦАП, ШИМ | при первом упоминании добавляйте английскую расшифровку |
+| GPIO, HAL, PAC, BSP, NVIC, SPI, I2C, UART, BLE, Wi-Fi | — | оставляем английскими |
 
 Если нужного термина нет в таблице, посмотрите, как он переведён в других книгах сборника, и используйте тот же вариант.
 

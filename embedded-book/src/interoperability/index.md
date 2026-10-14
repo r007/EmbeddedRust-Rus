@@ -32,7 +32,7 @@ fn foo(num: u32) {
 
 Примеры и варианты использования для этого мы собираем в нашем трекере задач в [issue #61].
 
-[issue #61]: https://github.com/r007/EmbeddedRust-Rus/issues/61
+[issue #61]: https://github.com/rust-embedded/book/issues/61
 
 ## Взаимодействие с RTOS
 
@@ -44,4 +44,4 @@ fn foo(num: u32) {
 
 Примеры и варианты использования для этого мы собираем в нашем трекере задач в [issue #62].
 
-[issue #62]: https://github.com/r007/EmbeddedRust-Rus/issues/62
+[issue #62]: https://github.com/rust-embedded/book/issues/62

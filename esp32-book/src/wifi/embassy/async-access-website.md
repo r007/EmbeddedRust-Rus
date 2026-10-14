@@ -50,7 +50,7 @@ embassy-net = { version = "0.7.1", features = [
 
 ### smoltcp
 
-Крейт smoltcp тоже добавляется в Cargo.toml. Чтобы использовать DNS-серверы, нужно добавить функцию «dns-max-server-count-4».
+Крейт smoltcp тоже добавляется в Cargo.toml. Чтобы использовать DNS-серверы, нужно включить feature «dns-max-server-count-4».
 
 ```toml
 # Обновлённый smoltcp в Cargo.toml

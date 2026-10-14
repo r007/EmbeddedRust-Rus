@@ -4,7 +4,7 @@
 
 ## Упражнение 3.3.1: FizzBuzz
 
-В этом упражнении вы попрактикуетесь в написании модульного теста и используете средства бенчмаркинга Rust, чтобы оптимизировать приложение [FizzBuzz](https://ru.wikipedia.org/wiki/FizzBuzz). Понадобится [`cargo-criterion`](https://bheisler.github.io/criterion.rs/book/cargo_criterion/cargo_criterion.html) — инструмент, который запускает бенчмарки и создаёт наглядные отчёты. Установить его можно командой
+В этом упражнении вы попрактикуетесь в написании модульного теста и воспользуетесь средствами бенчмаркинга Rust, чтобы оптимизировать приложение [FizzBuzz](https://ru.wikipedia.org/wiki/FizzBuzz). Понадобится [`cargo-criterion`](https://bheisler.github.io/criterion.rs/book/cargo_criterion/cargo_criterion.html) — инструмент, который запускает бенчмарки и создаёт наглядные отчёты. Установить его можно командой
 
 ```bash
 cargo install cargo-criterion --version=1.1.0

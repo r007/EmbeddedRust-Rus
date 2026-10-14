@@ -2,7 +2,7 @@
 
 <a href="https://training.tweede.golf/slides/1_1-introduction/" target="_blank">Слайды</a>
 
-> **О проекте.** Курс основан на открытых учебных материалах [Tweede golf](https://github.com/tweedegolf/rust-training). Лицензия оригинала: CC BY-SA 4.0. Русский перевод и адаптация выполнены участниками проекта RustTraining-Rus и распространяются по той же лицензии CC BY-SA 4.0.
+> **О проекте.** Курс основан на открытых учебных материалах [Tweede golf](https://github.com/tweedegolf/rust-training). Лицензия оригинала: CC BY-SA 4.0. Русский перевод и адаптация выполнены в проекте EmbeddedRust-Rus и распространяются по той же лицензии CC BY-SA 4.0.
 >
 > **Упражнения.** Исходный код упражнений находится в [репозитории оригинала](https://github.com/tweedegolf/rust-training). Пути вида `exercises/...` в тексте указывают на каталоги в этом репозитории.
 
@@ -22,7 +22,7 @@
 
 ## Улучшения
 
-Если вы заметили ошибку или хотите что-то предложить, откройте issue или pull request в [репозитории оригинала на GitHub](https://github.com/tweedegolf/rust-training). Замечания по русскому переводу присылайте в [репозиторий RustTraining-Rus](https://github.com/r007/RustTraining-Rus).
+Если вы заметили ошибку или хотите что-то предложить, откройте issue или pull request в [репозитории оригинала на GitHub](https://github.com/tweedegolf/rust-training). Замечания по русскому переводу присылайте в [репозиторий EmbeddedRust-Rus](https://github.com/r007/EmbeddedRust-Rus).
 
 ## Лицензия
 

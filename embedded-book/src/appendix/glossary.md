@@ -35,7 +35,7 @@ Serial Peripheral Interface (последовательный периферий
 
 ### SVD
 
-System View Description — формат файла на основе XML, который описывает представление программиста о устройстве микроконтроллера. Подробнее о нём можно прочитать на [сайте документации ARM CMSIS](https://www.keil.com/pack/doc/CMSIS/SVD/html/index.html).
+System View Description — формат файла на основе XML, который описывает представление программиста об устройстве микроконтроллера. Подробнее о нём можно прочитать на [сайте документации ARM CMSIS](https://www.keil.com/pack/doc/CMSIS/SVD/html/index.html).
 
 ### UART
 
